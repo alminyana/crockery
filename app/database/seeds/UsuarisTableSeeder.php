@@ -9,16 +9,16 @@ class UsuarisTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 		Usuari::create([
-			'mail' => 'quique@crockery.es',
-			'nom' => 'Quique',
-			'rol' => 0,
-			'password' => Hash::make('soyquique')
+			'mail' => '',
+			'nom' => '',
+			'rol' =>,
+			'password' => 
 		]);
 		Usuari::create([
-			'mail' => 'guille@crockery.es',
-			'nom' => 'Guille',
-			'rol' => 0,
-			'password' => Hash::make('soyguille')
+			'mail' => '',
+			'nom' => '',
+			'rol' =>,
+			'password' => 
 		]);
 
 		foreach(range(1, 2) as $index)
