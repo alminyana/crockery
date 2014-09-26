@@ -1,0 +1,1 @@
+C:\xampp\htdocs\sitesLaravel\crockery_laravel\app/views/usuaris/show.blade.php

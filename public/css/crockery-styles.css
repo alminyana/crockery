@@ -1,0 +1,436 @@
+/*-----------------------------main*/
+body {
+	/*
+	padding-top:70px;
+	padding-bottom:70px;
+	*/
+	height: 100%;
+}
+
+.finalpagina {
+	margin-bottom: 4em;
+}
+/*GENERAL FORMULARIOS ESPCIOS ENTRE FORM-GROUP LABELS */
+
+.form-group {
+		margin-top: 1em;
+		margin-bottom: 2em;
+}
+
+/* GENERAL CAJA ALTA / CAJA BAJA*/
+
+.upper {
+	text-transform: uppercase;
+}
+.lower {
+	text-transform: lowercase;
+}
+
+
+/*BOOTSTRAP PANEL VISTAS CREATE SUBCATEG Y CREATE CATEG*/
+
+.panel-primary .panel-heading {
+	background-color:grey;
+	border-color: grey;
+}
+.panel-primary {
+	border-color: grey;
+}
+
+/* INDEX PRODUCTOS PARA TODOS LOS USUARIOS*/
+
+.fondopanel {
+		padding: 1em;
+		background-color: #ddd;
+}
+.espacio {
+	width: 100%;
+	margin: 2em 0 2em;
+}
+.titu {
+	border: solid #ccc 2px;
+	padding: .5em;
+	margin-bottom: 3em;
+}
+.titu h2 {
+	font-family: 'Archivo Black', sans-serif;
+	text-align: center
+}
+.petit h2 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 17px;
+	text-align: center;	
+}
+
+
+/*  BOOTSTRAP IMAGE GALLERY*/
+h1 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+a {
+    color: orange;
+}
+a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+.modal {
+	overflow: auto;
+	color: #333;
+
+}
+
+.modal-content {
+
+}
+
+.modal-body img {
+	width:90%;
+	height: auto;
+}
+
+.modal-title {
+	/*
+	color: #222;
+	width: 90%;
+	border: solid #222 8px;
+	*/
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: center;
+	margin: auto;
+}
+
+
+
+.idiomas {padding-right:1.5em;}
+.footer {margin-top: 100px;margin-bottom: 0px;padding-bottom: 0px;}
+.idiomasfooter {padding-left:1.5em;padding-right:1.5em;}
+
+/*CABECERA GENERAL*/
+
+.titol-test {
+        background-color: #222;
+        padding: .5em;
+    }
+    .titol-test h3 {
+        color: white;
+        margin-left: 1em;
+        font-family: 'Archivo Black', sans-serif;
+    }
+    .sup {
+        margin-top: 2em;
+    }
+    .titol-head {
+    	text-transform: uppercase;
+    	letter-spacing:2px;
+    	margin: 3em 0 3em 0;
+
+    }
+    .titol-head-head {
+        background-color: #222;
+        margin: 3em 0 3em 0;
+    }
+    .titol-head-head h3 {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: .5em;
+        font-size: 30px;
+        letter-spacing:2px;
+        font-family: 'Archivo Black', sans-serif;
+    }
+    .peque {background-color: #222;}
+    .peque h3 {
+    	font-size: 22px;
+    	letter-spacing:1px;
+    }
+
+
+
+
+/*-------------------------MAPA CONTACTO*/
+#map_canvas {
+	width: 90%;
+	height: 390px;
+	margin: 3em auto;
+
+}
+span#ciudad {
+	margin-left:1.3em;
+}
+address {
+	font-size: 15px;
+	line-height: 1.5em;
+	margin-left: 2em;
+	min-width: 375px;
+}
+.logo {margin-top: 1em;}
+.margentop {
+	margin-top: 4em;
+}
+p.expli {
+	font-size: 20px;
+
+}
+p.horario {
+	font-size: 16px;
+}
+#planomapa {
+	border: dashed black 5px;
+
+}
+
+
+/*-----------------PANEL ADMINISTRADOR*/
+
+.menuadmin h3 {
+	text-align: center;
+	padding: 1em;
+	background-color: #ccc;
+	margin-bottom: 2em;
+}
+
+@media screen and (max-width: 350px) {
+	.menuadmin h3 {
+		font-size: 22px;
+	}
+}
+
+
+.menuadmin div {
+	margin: 1em 0 1em 0;
+}
+				/* BOTONES GESTION */
+#insertarCategoria {
+	background-color: #029E16;
+	border-color: #008011;
+}
+#insertarCategoria:hover {
+	background-color: #008011;
+}
+
+#verCategoria {
+	background-color: #116B1D;
+	border-color: #0A5213;
+}
+
+#verCategoria:hover {
+	background-color: #0A5213;
+	
+}
+
+#verSubcategoria {
+	background-color: #eee;
+}
+
+#verSubcategoria:hover {
+	background-color: #ccc;
+}
+
+
+/*-------------------INSERTAR PRODUCTO*/
+#instruc {padding-top:1em;}
+#instruc.xs {
+	margin-top: 4em;
+}
+#insertarfoto {
+	background-color: #747575;
+	border-color: #585959;
+}
+#insertarfoto:hover {
+	background-color: #474747;
+	border-color: #080808;
+}
+#verfoto {
+	background-color: #222;
+	border-color: #080808;
+}
+
+#verfoto:hover {
+	background-color: #3c3a3a;
+	border-color: #080808;
+}
+#mostrarobjetos,#down {
+	margin-top: 2em;
+	background-color: #222;
+	border-color: #111;
+}
+
+#mostrarobjetos:hover, #down:hover {
+	background-color: #555;
+	border-color: #444;
+}
+
+/*------------------LISTAR PRODUCTOS GESTION---------------------*/
+/*BOTONES*/
+#ajaxlistarsub {
+	background-color: #029E16;
+	border-color: #008011;
+}
+#ajaxlistarsub:hover {
+	background-color: #008011;
+}
+#ajaxlistarprod {
+	background-color: #116B1D;
+	border-color: #0A5213;
+}
+#ajaxlistarprod:hover {
+	background-color: #0A5213;
+}
+
+/*--------------------INSERTAR CATEGORIA*/
+span.label {
+	margin-top: 1em;
+	margin: .5em;
+}
+
+.cat-act {
+	font-size: 1.5em;
+}
+.panel {
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+#tablacateg {
+	padding: 1em;
+
+}
+
+/*INDEX CATEGORIA*/
+
+.acciones {
+	width: 200px;
+}
+.acciones a {
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+#tablaindexcate th:hover, #tabla-actuales th:hover {
+	background-color: #ddd;
+	cursor:pointer;
+}
+
+/*-----*/
+#logo-gif img:hover {
+	cursor: pointer;
+}
+
+.waiting {
+	width: 60px;
+	margin-left: 2em;
+}
+.actiu {
+	background-color: #111;
+}
+ul#lista-menu li:hover, ul#lista-menu li:focus {
+	background-color: #080808;
+}
+
+
+/* margen en los iconos de id izq*/
+i.izq {
+	margin-right: .5em;
+}
+
+div#wait {
+	display:none;
+	margin-left: 2em;
+	
+}
+
+img#fotowait {
+	width: 40px;
+}
+
+#alert {
+	background-color: #222;
+	border-color: black;
+	color: white;
+}
+
+#alert button {
+	color: white;
+}
+
+.anchito {width: 100%;}
+#wait i, #waiting i {margin-left: 1em;}
+
+
+/* INDEX PRODUCTOS*/
+#formuprod {
+	margin-top: 3em;
+	min-height: 100%;
+	margin-bottom: 4em;
+	/*
+	display:none;
+	*/
+}
+/*   CABECERAS CON INFORMACION DE FORMULARIOS SUBCATEGORIAS Y CATEGORIAS*/
+.fondo {
+	margin: 3em 0em 3em 0em;
+	border-radius: 5px;
+	padding: .5em;
+}
+
+.fondo-fieldset {
+	margin: 4em 0em 3em 0em;
+	
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+.fondojumbo h3 {
+	padding: .5em;
+	background-color: rgba(5,5,5,0.6);
+}
+#bolita {
+	margin-top:2em;
+}
+.margenlogo {
+	margin-top: 3em;
+	
+}
+.fondomargenlogo {
+	/*background: rgba(5, 5, 5, 0.6);
+	*/
+	margin: 1em;
+	border: 10px solid #222;
+	padding: .5em;
+
+}
+
+#botonesindexprod {
+	margin-top: 2em;
+}
+.blanco {
+	color: #ddd;
+}
+#bordebolita {
+	opacity:.9;
+	/*
+	border: solid #222 12px;
+	*/
+}
+
+
+h2#expli {
+	text-align: center;
+}
+input[type=select]:hover {
+	cursor: ;
+}
+
+.idiomaactivo {
+	/*
+	background-color: #eee;
+	*/
+}
+.dropdown-menu {
+	background-color: #222;
+}
+.dropdown-menu li a {
+	color: white;
+}

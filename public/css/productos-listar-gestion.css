@@ -1,0 +1,35 @@
+/*PAGINA GESTION ADMIN LISTAR PRODUCTOS*/
+.subsub {
+    display:none;
+}
+.listado {
+    width: 150px;
+    height: auto;
+    min-width: 80px;
+}
+.espaiasota {
+        margin-bottom: 4em;
+}
+#sub,#cat,#num {
+    font-size: 35px;
+}
+.margensup {
+    margin: 1em 0 1em 0;
+    text-align: center;
+
+}
+.tablaprods {
+    display: none;
+}
+.bajo {
+    margin-bottom: 4em;
+}
+.tit {
+    background-color: black;
+    padding: .5em;
+    color: white;
+}
+.blanco {height: 100px;}
+td a {
+    margin-top: 1em;
+}

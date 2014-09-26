@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "arial";
+  src: url("arial-black.eot?") format("eot"),
+  url("arial-black.woff") format("woff"),
+  url("arial-black.ttf") format("truetype");
+}
+body {
+	font-family: "arial";
+	font-weight: "900";
+}
+
+/*----------------FONDOS CON IMAGEN-------------------*/
+.uno {
+	/*
+	background: url('../img/img-intro/IMG_2897-72.jpg') no-repeat fixed center right;
+	background-color: #222;
+	*/
+	
+	background: url('../img/img-intro/base/IMG_4357.jpg') no-repeat fixed center left;
+	width: 100%;
+	height: 800px;
+}
+
+.dos {
+	background: url('../img/img-intro/base/IMG_2483.JPG') no-repeat fixed center;
+	width: 100%;
+	height: 800px;
+}
+
+.tres {
+	background: url('/img/img-intro/base/IMG_3349edit.jpg') no-repeat fixed center;
+	width: 100%;
+	height: 800px;
+}
+
+.cuatro {
+	background: url('/img/img-intro/base/IMG_4684.jpg') no-repeat fixed center;
+	width: 100%;
+	height: 800px;
+}
+
+
+
+@media screen and (max-width: 350px) {
+	.uno {
+		/*
+		background-color: grey;
+		*/
+		background: url('../img/img-intro/350px/IMG_4357peque.jpg');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position:center;
+		width: 100%;
+		height: 800px;
+	}
+	.dos {
+		background: url('../img/img-intro/350px/IMG_2483-peque2.jpg');
+		width: 100%;
+		height: 800px;
+	}
+	.tres {
+		background: url('../img/img-intro/base/IMG_3349edit.jpg');
+		width: 100%;
+		height: 800px;
+		background-attachment:fixed;
+		background-position:center;
+	}
+
+	.cuatro {
+		background: url('/img/img-intro/base/IMG_4684.jpg');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position:center;
+		width: 100%;
+		height: 800px;
+	}
+}
+@media screen and (min-width: 351px) and (max-width: 480px) {
+	.uno {
+		/*
+		background-color: grey;
+		background-image: url('../img/img-intro/IMG_2897-72-peque.jpg');
+		*/
+		background: url('../img/img-intro/350px-480px/IMG_4357peque.jpg');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position:center;
+	}
+	.dos {
+		background: url('../img/img-intro/350px-480px/IMG_2483-peque.jpg');
+		width: 100%;
+		height: 800px;
+	}
+	.tres {
+		background: url('../img/img-intro/350px-480px/IMG_5070peque.jpg');
+		width: 100%;
+		height: 800px;
+	}
+
+	.cuatro {
+		background: url('/img/img-intro/base/IMG_4684.jpg');
+		width: 100%;
+		height: 800px;
+	}
+}
+
+.blanco-iconos {
+	height: 470px;
+	width: 100%;
+	padding: 1em;
+	background-color: white;
+	/*
+	background-color: rgba(34,34,34,1);
+	*/
+}
+.alto {
+	height: 50px;
+}
+
+.blanco-iconos2 {
+	height: 100%;
+	width: 100%;
+	padding: 1em;
+	background-color: white;
+	/*
+	background-color: rgba(34,34,34,1);
+	*/
+}
+
+/*-------------------------------POSICION LOGO INDEX ------------------------------*/
+.bloque {
+	bottom: -200px;
+	position: relative;
+	
+	/*
+	background-color: rgba(34,34,34,.7);
+	*/
+	border-radius: 0px;
+	padding: 4em;
+
+}
+
+@media screen and (max-width: 350px) {
+	.bloque-peque {
+		width:90%;
+		top: 150px;
+		position: relative;
+	}
+
+}
+hr {
+	margin: 0 3em 0 3em;
+}
+@media screen and (min-width: 351px) and (max-width: 480px) {
+	.bloque-peque {
+		width: 70%;
+		top: 70px;
+		position: relative;
+	}
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+	.bloque-peque {
+		width: 70%;
+		top: 200px;
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+	.blanco-iconos {
+		height: 600px;
+	}
+}
+
+/*--------------------------------- FONDO BLANCO -----------------------------------*/
+
+
+.texto {
+	color: #222;
+	text-align: center;
+	padding: 1em;
+
+}
+
+.row {
+	background-color: white;
+}
+h1 i {
+	font-size: 80px;
+}
+p {
+	font-size: 18px;
+}
+.margen {
+	padding: 0 4em 0 4em;
+}
+
+/*-------------------------------------- BOTONES SLIDE FINAL ----------------------------*/
+.btn {
+	margin-top: .5em;
+}
+.btn-danger {
+	background-color: #222;
+	border-color: #444;
+}
+
+.btn-danger:hover {
+	background-color: #444;
+	border-color: #222;
+}

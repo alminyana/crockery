@@ -1,0 +1,1 @@
+C:\xampp\htdocs\sitesLaravel\crockery_laravel\app/views/subcategorias/show.blade.php
