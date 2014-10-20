@@ -8,38 +8,41 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 	<style type="text/css">
-		body {
-			background-color: grey;
-			width: 100%;
-		}
-		#imgimg {width: 100%;}
 		@media screen and (max-width: 350px) {
-			#imgimg {width: 100%;}
+			
 		}
 		@media screen and (min-width: 351px) and (max-width: 480px) {
-				#imgimg {width: 50%;}
+				
+		}
+		.container-fluid {
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			vertical-align: middle;
+		}
+		.caja {
+			text-align: center;
+			vertical-align: middle;
 		}
 	</style>
 </head>
 <body>
-		<div class="caja">
-			<a id="logoinicial" href="{{URL::to('index')}}">
-				<img id="imgimg" src="img/home-face.gif" class="img-responsive">
-			</a>
+		<div class="container-fluid">
+			<div class="caja">
+				<a id="logoinicial" href="{{URL::to('index')}}"><img id="imgimg" src="img/home-face.gif" class="img img-responsive"></a>
+			</div>
 		</div>
+
+
+
 	<script type="text/javascript">
 		$(document).ready(function(){
-			//$(window).location.reload();
-
 			$('.caja').css({
 	               position:'absolute',
 	               left: ($(window).width() - $('.caja').outerWidth())/2,
 	               top: ($(window).height() - $('.caja').outerHeight())/2
 	          });
-
 		    $(window).resize(function(){
-
-	          // aquí le pasamos la clase o id de nuestro div a centrar (en este caso "container")
 	          $('.caja').css({
 	               position:'absolute',
 	               left: ($(window).width() - $('.caja').outerWidth())/2,
@@ -50,6 +53,7 @@
 			// Ejecutamos la función
 			$(window).resize();
 		});
+		
 	</script>
 </body>
 </html>
