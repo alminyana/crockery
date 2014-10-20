@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => '',
+	'default' => 'mysql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -53,11 +53,11 @@ return array(
 		),
 
 		'mysql' => array(
-			'driver'    => '',
-			'host'      => '',
-			'database'  => '',
-			'username'  => '',
-			'password'  => '',
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'lara_crockery',
+			'username'  => 'guil',
+			'password'  => '4321',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

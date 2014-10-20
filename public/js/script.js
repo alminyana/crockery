@@ -77,7 +77,7 @@ $(document).ready(function(){
                         $('#waiting').hide();
                         var mostra = ''; 
                         if (respuesta) {
-                            mostra += "<select class='form-control input-lg' name='id_subcateg' id='id_subcateg'>";
+                            mostra += "<select class='form-control input-default' name='id_subcateg' id='id_subcateg'>";
                             for (data in respuesta.subs) {
                                 mostra += "<option value="+respuesta.subs[data].id+">"+respuesta.subs[data].nom+"</option>";
                             }
@@ -148,7 +148,7 @@ $(document).ready(function(){
                         console.log(titolo);
                         for (data in respuesta.obs) {
                             /* version2 */
-                            content+="<div class='col-xs-12 col-sm-6 col-md-3 col-lg-2'><div class='thumbnail'>";
+                            content+="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='thumbnail'>";
                                 content+="<a href='productos/"+respuesta.obs[data].id+"/imatge' title='"+titolo+" | "+titolgaleria+"' data-gallery>";
                                 content += "<img class='img img-responsive img-rounded anchito' src='productos/"+respuesta.obs[data].id+"/imatge'/>";
                                 content+="</a>";
