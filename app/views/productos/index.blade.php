@@ -39,33 +39,13 @@
     </div>
 </div>
 	<div class="container">
-        <div class="page-header">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
         	<h1><strong>Lista Productos</strong></h1>
 
         </div>
     </div>
 <style>
-	.mipanel {
-		background-color: #222;
-		color: white;
-		padding: .5em;
-	}
-	.negro {
-		padding: 1em;
-		background-color: #222;
-		color: white;
-		height: 50px;
-	}
-	.negro h3 {
-		margin: 0;
-	}
-	.mas {
-		margin-top: 3em;
-	}
-	.centrado {
-		text-align: center;
-	}
-	#down {margin: 0 1em 0 1em;}
+
 </style>
 	<div class="container">
 		<div class="center-block">
@@ -87,7 +67,7 @@
 				</div>
 			</div>
 			<br/>
-			<button class="btn btn-danger btn-primary btn-block" type="button" id="">{{Lang::get('textos.indexboton')}}</button>
+			<button class="btn btn-danger btn-primary btn-block" type="button" id=""><i class="fa fa-file-image-o"> </i> {{Lang::get('textos.indexboton')}}</button>
 			</div>
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg mas"></div>
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 espaitop">

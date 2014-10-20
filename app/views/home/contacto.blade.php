@@ -137,17 +137,12 @@ crockery:
     }
     </style>
     <div class="container">
-        <div class="hidden-sm hidden-md hidden-lg">
-            <div class="titol-head-head peque">
-                <h3><i class="fa fa-map-marker izq"></i>{{Lang::get('textos.titucontacto')}}</h3>
-            </div>
-        </div>
-        <div class="hidden-xs">
-            <div class="titol-head-head">
-                <h3><i class="fa fa-map-marker izq"></i>{{Lang::get('textos.titucontacto')}}</h3>
-            </div>
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
+          <h1><strong>CROCKERY</strong> <i class="fa fa-map-marker"></i></h1>
+
         </div>
     </div>
+
     <div class="container finalpagina">
       <div id="map_canvas"></div>  
       <div class="jumbotron">

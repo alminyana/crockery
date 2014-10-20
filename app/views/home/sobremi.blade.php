@@ -15,17 +15,10 @@
     </script>
 
 
-	<div class="container">
-        <div class="hidden-sm hidden-md hidden-lg">
-            <div class="titol-head-head peque">
-                <h3><i class=""></i>Sobre Crockery</h3>
-                <!--  h3 class="sombra"><i class="fa fa-map-marker izq"></i><strong>Sobre Crockery</strong></h3  -->
-            </div>
-        </div>
-        <div class="hidden-xs">
-            <div class="titol-head-head">
-                <h3><i class=""></i>Sobre Crockery</h3>
-            </div>
+	    <div class="container">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
+          <h1><strong>SOBRE CROCKERY</strong> <i class="fa fa-map-marker"></i></h1>
+
         </div>
     </div>
     

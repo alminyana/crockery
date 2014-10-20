@@ -39,6 +39,35 @@ body {
 
 /* INDEX PRODUCTOS PARA TODOS LOS USUARIOS*/
 
+	.page-header h1 { 
+		background-color: #222;
+		padding: .5em;
+		text-transform: uppercase;
+		color: white;
+	}
+	.mipanel {
+		background-color: #222;
+		color: white;
+		padding: .5em;
+	}
+	.negro {
+		padding: 1em;
+		background-color: #222;
+		color: white;
+		height: 50px;
+	}
+	.negro h3 {
+		margin: 0;
+	}
+	.mas {
+		margin-top: 3em;
+	}
+	.centrado {
+		text-align: center;
+	}
+	#down {margin: 0 1em 0 1em;}
+
+
 .fondopanel {
 		padding: 1em;
 		background-color: #ddd;
