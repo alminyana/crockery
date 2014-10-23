@@ -138,7 +138,9 @@ $(document).ready(function(){
                 data: {subcategoria: $valor},
                 dataType: 'json',
                 beforeSend: function(){
-                    $('#contenidoajax').html('holaaa!!');
+
+                    var logoAjax = '<img src="/img/gif-load.gif" style="padding-top: 5em;" class="center-block"/>'
+                    $('#contenidoajax').html(logoAjax);
                 },
                 success: function (respuesta) {
                     var content="";

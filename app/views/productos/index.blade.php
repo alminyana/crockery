@@ -40,9 +40,12 @@
 </div>
 	<div class="container">
         <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
-        	<h1><strong>Lista Productos</strong></h1>
+        	<h2><strong>Lista Productos</strong></h2>
 
         </div>
+        {{--<div class="pull-right">
+        	<img id="bordebolita" class="img img-responsive img-circle center-block" src="img/animasionOK.gif" width="160px">
+        </div>--}}
     </div>
 <style>
 
@@ -51,7 +54,7 @@
 		<div class="center-block">
 			<img id="bordebolita" class="img img-responsive img-circle center-block" src="img/animasionOK.gif" width="160px">
 		</div>
-		<div class="row">
+		<div class="row" id="ancorrow">
 			<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-lg-3 fondopanel">
 				<div class="form-group">
 				{{--Form::label('categoria','Categoría')--}}

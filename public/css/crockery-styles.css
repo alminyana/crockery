@@ -39,21 +39,21 @@ body {
 
 /* INDEX PRODUCTOS PARA TODOS LOS USUARIOS*/
 
-	.page-header h1 { 
+	.page-header h1, .page-header h2 { 
 		background-color: #222;
 		padding: .5em;
 		text-transform: uppercase;
-		color: white;
+		color: #fff;
 	}
 	.mipanel {
 		background-color: #222;
-		color: white;
+		color: #fff;
 		padding: .5em;
 	}
 	.negro {
 		padding: 1em;
 		background-color: #222;
-		color: white;
+		color: #fff;
 		height: 50px;
 	}
 	.negro h3 {
@@ -81,6 +81,8 @@ body {
 	padding: .5em;
 	margin-bottom: 3em;
 }
+
+/* TITULOS ANTIGUOS GRANDES SOLO ESTAN AHORA EN LA PARTE DE ADMIN*/
 .titu h2 {
 	font-family: 'Archivo Black', sans-serif;
 	text-align: center

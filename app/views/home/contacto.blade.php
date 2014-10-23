@@ -138,7 +138,7 @@ crockery:
     </style>
     <div class="container">
         <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
-          <h1><strong>CROCKERY</strong> <i class="fa fa-map-marker"></i></h1>
+          <h2><strong>CROCKERY</strong> <i class="fa fa-map-marker"></i></h2>
 
         </div>
     </div>
