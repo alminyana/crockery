@@ -148,6 +148,12 @@ $(document).ready(function(){
                         console.log('hay algo');
                         content+="<div id='links'>";
                         var titolo = $("select option:selected").html();
+                        var titoloPartido;
+                        if (titolo == 'ELECTRODOMÉSTICOS' || titolo == 'ELECTRODOMESTICOS' || titolo == 'Electrodomésticos' || titolo == 'Electrodomesticos') {
+                            titoloPartido = 'ELECTRODO-<br/>MÉSTICOS';
+                        } else {
+                            titoloPartido = titolo;
+                        }
                         var titolo2 = $("#id_subcateg option:selected").html();
                         var titolgaleria = titolo2;
                         console.log(titolo);
@@ -160,7 +166,7 @@ $(document).ready(function(){
                                 if (titolo2 == 'TODO' || titolo2 == 'todo' || titolo2 == 'Todo') {
                                     titolo2 = "<i class='glyphicon glyphicon-asterisk'></i>";
                                 }
-                                content+="<h4 class='centrado'><span class='text-success'>"+titolo+"</span></h4>";
+                                content+="<h4 class='centrado'><span class='text-success'>"+titoloPartido+"</span></h4>";
                                 content+="<h4 class='centrado'>"+titolo2+"</h4>";
                                 var nombre_foto = titolo.toLowerCase();
                                 var nombre_foto2 = titolgaleria.toLowerCase();

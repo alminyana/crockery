@@ -55,6 +55,7 @@ body {
 		background-color: #222;
 		color: #fff;
 		height: 50px;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 	}
 	.negro h3 {
 		margin: 0;
@@ -82,7 +83,7 @@ body {
 	margin-bottom: 3em;
 }
 
-/* TITULOS ANTIGUOS GRANDES SOLO ESTAN AHORA EN LA PARTE DE ADMIN*/
+/* TITULOS ANTIGUOS GRANDES SOLO ESTAN AHORA EN LA PARTE DE ADMIN ----------------------------------------------------------------*/
 .titu h2 {
 	font-family: 'Archivo Black', sans-serif;
 	text-align: center
@@ -352,6 +353,10 @@ span.label {
 	cursor: pointer;
 }
 
+#waiting {
+	width: 60px;
+	margin-left: 2em;
+}
 .waiting {
 	width: 60px;
 	margin-left: 2em;

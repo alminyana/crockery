@@ -75,7 +75,7 @@
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg mas"></div>
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 espaitop">
 				<div class="negro">
-					<h3 class="text-right">Productos Alquiler Crockery</h3>
+					<h3 class="text-right upper"><strong>Galería de imágenes</strong></h3>
 				</div>
 				<div class="espacio"></div>
 	<div id="contenidoajax"></div>
