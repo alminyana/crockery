@@ -280,13 +280,18 @@ p.horario {
 	background-color: #3c3a3a;
 	border-color: #080808;
 }
-#mostrarobjetos,#down {
+#mostrarobjetos {
+	margin-top: 2em;
+}
+
+#down {
 	margin-top: 2em;
 	background-color: #222;
 	border-color: #111;
+
 }
 
-#mostrarobjetos:hover, #down:hover {
+#down:hover {
 	background-color: #555;
 	border-color: #444;
 }

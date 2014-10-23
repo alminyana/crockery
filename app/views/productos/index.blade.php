@@ -67,7 +67,7 @@
 				</div>
 			</div>
 			<br/>
-			<button class="btn btn-danger btn-primary btn-block" type="button" id=""><i class="fa fa-file-image-o"> </i> {{Lang::get('textos.indexboton')}}</button>
+			<button class="btn btn-danger btn-primary btn-block" type="button" id="mostrarobjetos"><i class="fa fa-file-image-o"> </i> {{Lang::get('textos.indexboton')}}</button>
 			</div>
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg mas"></div>
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 espaitop">

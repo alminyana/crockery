@@ -137,6 +137,9 @@ $(document).ready(function(){
                 contentType: "image/png",
                 data: {subcategoria: $valor},
                 dataType: 'json',
+                beforeSend: function(){
+                    $('#contenidoajax').html('holaaa!!');
+                },
                 success: function (respuesta) {
                     var content="";
                     if(respuesta){
