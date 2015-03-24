@@ -1,13 +1,18 @@
 @extends('layout.main')
-<script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHsPg75t40Gs1_fuCiRD0KBRKa72gNgtg&sensor=true">
-    </script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCSFonLSF9y00Ez9qpqyEprGwiWES4X1ik&sensor=true&libraries=places">
+  </script>
 @section('content')
 <script>
 /*
 crockery:
   latitud: 41.39696313211986
   longitud: 2.17448148472522
+
+Barcelona Spain Calle Pallars 84-88
+  latitud: 41.3950228
+  longitud: 2.189605799999981
+
 */
   
 	var styles = [
@@ -72,6 +77,7 @@ crockery:
     var map;
       function initializeMapaRutas() {
       	var myLatlng =  new google.maps.LatLng(41.39696313211986, 2.17448148472522);
+        var myLatlng2 =  new google.maps.LatLng(41.3950228, 2.189605799999981);
         var myCenter =  new google.maps.LatLng(41.400867, 2.184670);
         var mapOptions = {
           center:myCenter,
@@ -79,7 +85,8 @@ crockery:
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         //icono y marker de crockery
-        var image = "img/marker1.png";
+        var image = "img/marker1.png",
+            image2 = "img/markerojo.png";
 
         var marker = new google.maps.Marker({
             position: myLatlng,
@@ -87,6 +94,13 @@ crockery:
             animation: google.maps.Animation.DROP,
             title:"Crockery",
             icon: image
+        });
+        var marker2 = new google.maps.Marker({
+            position: myLatlng2,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            title:"Nuevo Crockery",
+            icon: image2
         });
         //info del marker de crockery
         var contentString = '<div id="content">'+
@@ -100,17 +114,34 @@ crockery:
             '</div>'+
             '</div>';
 
+        var contentString2 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '<img width="70%" class="img img-responsive" src="img/logo.jpg">'+
+            '<div id="bodyContent">'+
+            
+            '<br/><p class="text-danger"><i class="glyphicon glyphicon-home izq"></i>Nueva Dirección - Pallars 84-88 2º1a, Barcelona</p>'+
+            '<p><i class="glyphicon glyphicon-time izq"></i> <strong>Mañana</strong> 10:00 - 13:00<br/><strong><span class="sangria">Tarde</span></strong> 16:00 - 19:00</p>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
+
         var infowindow = new google.maps.InfoWindow({
             content: contentString
+        });
+        var infowindow2 = new google.maps.InfoWindow({
+            content: contentString2
         });
         //listener on click para el marker de crockery
         google.maps.event.addListener(marker, 'click', function() {
           infowindow.open(map,marker);
         });
-
+        google.maps.event.addListener(marker2, 'click', function() {
+          infowindow2.open(map,marker2);
+        });
         map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
         map.setOptions({styles: styles, scrollwheel: false});
         marker.setMap(map);
+        marker2.setMap(map);
     }
 
     google.maps.event.addDomListener(window, 'load', initializeMapaRutas);
@@ -154,8 +185,8 @@ crockery:
           <div id="fondodirec" class="contacto">
           <address>
 
-          <h2><span class="text text-info">{{Lang::get('textos.direcc')}}</span></h2>
-          <i class="glyphicon glyphicon-map-marker izq"></i> {{Lang::get('textos.pasaje')}} Tasso 6, Barcelona<br>
+          <h2><span class="text text-danger">{{Lang::get('textos.direcc')}}</span></h2>
+          <i class="glyphicon glyphicon-map-marker izq"></i> {{-- Lang::get('textos.pasaje') --}} Calle Pallars 84-88 2º 1a<br/><span style="margin-left: 2em">08018</span><br/>
           <i class="glyphicon glyphicon-phone-alt izq"></i> (93) 5341768<br/>
           <i class="glyphicon glyphicon-phone izq"></i> 678 437 407<br/>
           <i class="glyphicon glyphicon-phone izq"></i> 678 437 408<br/>
@@ -177,16 +208,18 @@ crockery:
             {{Lang::get('textos.reserva')}} <br/><i class="glyphicon glyphicon-phone izq"></i> 678 437 408
           </p>
           <br/>
-          <h2 class="text-info">{{Lang::get('textos.acces')}}</h2>
-          <p class="horario">
+         {{--  <h2 class="text-info">{{Lang::get('textos.acces')}}</h2>  
+         <p class="horario">
             {{Lang::get('textos.acces2')}}
           </p>
+          --}}
+          
           <br/><br/>
 
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
-       
-          {{Html::image('img/plano2.PNG','plano cercano',['class'=>'img-responsive','id'=>'planomapa'])}}
+       <h2 class="text-danger">Nuevo Plano</h2>
+          {{Html::image('img/planoPallars.PNG','plano cercano',['class'=>'img-responsive','id'=>'planomapa'])}}
         </div>
         </div>
           </div>     
