@@ -118,8 +118,8 @@ Barcelona Spain Calle Pallars 84-88
             '<div id="siteNotice">'+
             '<img width="70%" class="img img-responsive" src="img/logo.jpg">'+
             '<div id="bodyContent">'+
-            
-            '<br/><p class="text-danger"><i class="glyphicon glyphicon-home izq"></i>Nueva Dirección - Pallars 84-88 2º1a, Barcelona</p>'+
+            '<br/><h4 class="text-default"><span class="text-danger"><i class="glyphicon glyphicon-warning-sign izq"></i></span><strong>Nuevo Local</strong></h4>'+
+            '<p class="text-danger"><i class="glyphicon glyphicon-home izq"></i>Dirección - Pallars 84-88 2º1a, Barcelona</p>'+
             '<p><i class="glyphicon glyphicon-time izq"></i> <strong>Mañana</strong> 10:00 - 13:00<br/><strong><span class="sangria">Tarde</span></strong> 16:00 - 19:00</p>'+
             '</div>'+
             '</div>'+
@@ -194,8 +194,7 @@ Barcelona Spain Calle Pallars 84-88
         </div>
       </div>
       <div class="clearfix"></div>
-      <br/>
-      <br/>
+
           <div class="container">
             <div class="row fondo">
           <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
@@ -213,8 +212,6 @@ Barcelona Spain Calle Pallars 84-88
             {{Lang::get('textos.acces2')}}
           </p>
           --}}
-          
-          <br/><br/>
 
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
