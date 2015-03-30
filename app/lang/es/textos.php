@@ -69,4 +69,8 @@ return array(
     //LISTAR-GESTION-PRODUCTOS
     "gesti1"=>"Gestión Imágenes",
     "gesti2"=>"Escoge una Categoría y Subcategoría para ver sus imágenes",
+    //TRASLADO POBLE NOU
+    "traslado"=>"Nos trasladamos al Pueblo Nuevo",
+    "calle"=>"Calle",
+    "plano"=>"Nuevo plano"
 );

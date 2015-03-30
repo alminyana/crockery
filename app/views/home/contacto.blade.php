@@ -175,7 +175,12 @@ Barcelona Spain Calle Pallars 84-88
     </div>
 
     <div class="container finalpagina">
-      <div id="map_canvas"></div>  
+      <div id="map_canvas"></div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-danger text-center" style="font-size: 55px;margin: 2em 0"><strong>¡{{ Lang::get('textos.traslado')}}!</strong><br/><small>{{Lang::get('textos.calle')}} Pallars 84-88</small></h1>
+        </div>
+      </div>  
       <div class="jumbotron">
         <div class="col-xs-12 col-sm-6 col-md-6">
           <div class="logo">{{HTML::image('img/logo.jpg','logo Crockery',array('width'=>'400','class'=>'img img-responsive center-block','width'=>350))}}</div>
@@ -185,8 +190,8 @@ Barcelona Spain Calle Pallars 84-88
           <div id="fondodirec" class="contacto">
           <address>
 
-          <h2><span class="text text-danger">{{Lang::get('textos.direcc')}}</span></h2>
-          <i class="glyphicon glyphicon-map-marker izq"></i> {{-- Lang::get('textos.pasaje') --}} Calle Pallars 84-88 2º 1a<br/><span style="margin-left: 2em">08018</span><br/>
+          <h3><span class="text text-danger">{{Lang::get('textos.direcc')}}</span></h3>
+          <i class="glyphicon glyphicon-map-marker izq"></i> {{-- Lang::get('textos.pasaje') --}} {{Lang::get('textos.calle')}} Pallars 84-88 2º 1a<br/><span style="margin-left: 2em">08018</span><br/>
           <i class="glyphicon glyphicon-phone-alt izq"></i> (93) 5341768<br/>
           <i class="glyphicon glyphicon-phone izq"></i> 678 437 407<br/>
           <i class="glyphicon glyphicon-phone izq"></i> 678 437 408<br/>
@@ -197,8 +202,8 @@ Barcelona Spain Calle Pallars 84-88
 
           <div class="container">
             <div class="row fondo">
-          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-          <h2 class="text-info">{{Lang::get('textos.horario')}}</h2>
+          <div class="col-xs-12 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-5 col-lg-5">
+          <h3 class="text-info">{{Lang::get('textos.horario')}}</h3>
           <p class="horario"><span class="text-success upper"><strong>{{Lang::get('textos.julio')}}</strong></span><br/>
             {{Lang::get('textos.manana')}} 10:00 14:00<br/>
             {{Lang::get('textos.tarde')}} 16:00 19:00<br/>
@@ -215,7 +220,7 @@ Barcelona Spain Calle Pallars 84-88
 
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
-       <h2 class="text-danger">Nuevo Plano</h2>
+       <h3 class="text-danger">{{Lang::get('textos.plano')}}</h3>
           {{Html::image('img/planoPallars.PNG','plano cercano',['class'=>'img-responsive','id'=>'planomapa'])}}
         </div>
         </div>

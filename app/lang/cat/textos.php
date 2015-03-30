@@ -69,5 +69,9 @@ return array(
     //LISTAR-GESTION-PRODUCTOS
     "gesti1"=>"Gestió Imatges",
     "gesti2"=>"Escull una Categoria i Subcategoria per veure les seves imatges",
+    //TRASLADO POBLE NOU
+    "traslado"=>"Ens traslladem al Poble Nou",
+    "calle"=>"Carrer",
+    "plano"=>"Nou plànol"
 
 );
