@@ -44,8 +44,6 @@ $(document).ready(function(){
         $('body').ready(obtenerSubcategoriasIndex);
         $('body').on('load','window',obtenerProductosAjax);
         $('body').on('click','#mostrarobjetos',obtenerProductosAjax);
-        
-        //$('#selectsubcategorias').ready(obtenerProductosAjax);
 
     }
         //AJAX PARA OBTENER SUBCATEGORIAS EN VISTA CREATE-PRODUCTO
@@ -108,7 +106,7 @@ $(document).ready(function(){
                         var mostra = ''; 
                         if (respuesta) {
         
-                            mostra += "<select class='form-control input-lg' name='id_subcateg' id='id_subcateg'>";
+                            mostra += "<select class='form-control' name='id_subcateg' id='id_subcateg'>";
                             for (data in respuesta.subs) {
                                 mostra += "<option value="+respuesta.subs[data].id+">"+respuesta.subs[data].nom+"</option>";
 

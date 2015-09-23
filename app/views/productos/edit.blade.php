@@ -29,13 +29,13 @@
 			<div class="form-group">
 				{{ Form::label('id_categ','Categoría') }}
 
-				{{Form::select('id_categ',$cat,$prod->id_categ,['class'=>'form-control input-lg','id'=>'seleccategorias'])}}
+				{{Form::select('id_categ',$cat,$prod->id_categ,['class'=>'form-control','id'=>'seleccategorias'])}}
 			</div>
 			<div class="form-group">
 				{{ Form::label('id_subcateg','Subcategoría') }}
 				<div id="datos"></div>
 				<div id="cambio">
-					{{Form::select('id_subcateg',$sub,$prod->id_subcateg,['class'=>'form-control input-lg','id'=>'selecsubcategorias'])}}
+					{{Form::select('id_subcateg',$sub,$prod->id_subcateg,['class'=>'form-control','id'=>'selecsubcategorias'])}}
 				</div>
 			</div>
 			<div class="form-group">
@@ -43,7 +43,7 @@
 			</div>
 		    <br/>
 		    <div class="for-group">
-		    	{{ Form::submit('Editar datos',array('class'=>'btn btn-success btn-lg btn-block'))}}
+		    	{{ Form::submit('Editar datos',array('class'=>'btn btn-success btn-block'))}}
 		    </div>
 		{{ Form::close() }}
 	</div>

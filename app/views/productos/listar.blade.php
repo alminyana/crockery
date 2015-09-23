@@ -66,11 +66,11 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
                     <h4><span class="upper"><strong>{{Lang::get('textos.catecate')}}</strong></span></h4>
-                    {{Form::select('id_categ',$categorias,'id',['class'=>'form-control input-lg','id'=>'cate_listar_gestion'])}}
+                    {{Form::select('id_categ',$categorias,'id',['class'=>'form-control','id'=>'cate_listar_gestion'])}}
                     
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-lg btn-success btn-block" type="button" id="ajaxlistarsub">Mostrar Subcategorías</button>
+                        <button class="btn btn-success btn-block" type="button" id="ajaxlistarsub">Mostrar Subcategorías</button>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -80,7 +80,7 @@
                             <div id="subcategorias"></div>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-lg btn-success btn-block" type="button" id="ajaxlistarprod">Mostrar Imágenes</button>
+                            <button class="btn btn-success btn-block" type="button" id="ajaxlistarprod">Mostrar Imágenes</button>
                         </div>
                     </div>
                 </div>
@@ -94,13 +94,14 @@
     }
     .datos th {
         padding: .4em;
-        color: #222;
+        color: #fff;
+        background-color: #ccc;
     }
     #cat, #sub, #num {font-size: 23px;padding: 1em;}
     table {padding-bottom: 3em;}
     input[type='checkbox'] {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         margin: 2em;
     }
 </style>
@@ -115,9 +116,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span class="text-success"><strong id="cat"></strong></span></td>
-                        <td><span class="text-success lower"><strong id="sub"></strong></span></td>
-                        <td><span class="text-success"><strong id="num"></strong></span></td>
+                        <td><span class="text-primary"><strong id="cat"></strong></span></td>
+                        <td><span class="text-primary lower"><strong id="sub"></strong></span></td>
+                        <td><span class="text-primary"><strong id="num"></strong></span></td>
                     </tr>
                 </tbody>
             </table>
@@ -132,6 +133,9 @@
     }
     .todos {
         margin: 1em;
+    }
+    .listado {
+        width: 100px;
     }
 </style>
         <div class="blanco"></div>
@@ -169,7 +173,7 @@
                 
                 {{-- Form::submit('Mover imágenes seleccionadas',array('class'=>'btn btn-default btn-lg btn-block','id'=>'btn-grupo1')) --}}
                 <br/>
-                <button class="btn btn-default btn-lg btn-block" name="borrame1" id="borrame1">Mover Imágenes Seleccionadas</button>
+                <button class="btn btn-default btn-block" name="borrame1" id="borrame1">Mover Imágenes Seleccionadas</button>
 
             </div>
             <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
@@ -178,7 +182,7 @@
                 </a>
                 --}}
                 <br/>
-                <button class="btn btn-danger btn-lg btn-block" name="borrame2" id="borrame2">Eliminar Imágenes Seleccionadas</button>
+                <button class="btn btn-danger btn-block" name="borrame2" id="borrame2">Eliminar Imágenes Seleccionadas</button>
                 
             </div>
 

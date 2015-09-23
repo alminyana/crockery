@@ -88,7 +88,7 @@ $(document).ready(function(){
                     success: function (respuesta) {
                         var mostra = ''; 
                         if (respuesta) {
-                            mostra += "<select class='form-control input-lg' name='id_subcateg' id='id_subcateg'>";
+                            mostra += "<select class='form-control' name='id_subcateg' id='id_subcateg'>";
                             for (data in respuesta.subs) {
                                 mostra += "<option value="+respuesta.subs[data].id+">"+respuesta.subs[data].nom+"</option>";
                                 //mostra += "Nom: "+respuesta.subs[data].nom+"<br/>";

@@ -11,7 +11,7 @@
     			<legend><h3>Datos Subcategoria</h3></legend>
     			<div class="col-xs-12 col-sm-6">
 	 			<h4>Nombre<br/><span class="text-info">{{$sub->nom}}</span></h4>
-	 			<h4>Descrición<br/> <span class="text-success">{{$sub->descripcio}}</span></h4>
+	 			<h4>Descripción<br/> <span class="text-success">{{$sub->descripcio}}</span></h4>
 	 		</div>
 	 		<div class="col-xs-12 col-sm-6">
 	 			<h4>Número de Imágenes<br/>
@@ -29,16 +29,16 @@
 			    <?php  //nom  ?>
 			    <div id="inputnom" class="form-group">
 			    	{{ Form::label('nom','Nombre') }}
-			    	{{ Form::text('nom', $sub->nom, array('class'=>'form-control input-lg')) }}
+			    	{{ Form::text('nom', $sub->nom, array('class'=>'form-control')) }}
 			    </div>
 			    <?php  //descripcion  ?>
 			    <div id="inputnom" class="form-group">
 			    	{{ Form::label('descripcio','Descripcion') }}
-			    	{{ Form::text('descripcio', $sub->descripcio, array('class'=>'form-control input-lg')) }}
+			    	{{ Form::text('descripcio', $sub->descripcio, array('class'=>'form-control')) }}
 			    </div>
 			    <br/>
 			    <div class="for-group">
-			    	{{ Form::submit('Editar datos',array('class'=>'btn btn-success btn-lg btn-block'))}}
+			    	{{ Form::submit('Editar datos',array('class'=>'btn btn-success btn-block'))}}
 			    </div>
 			{{ Form::close() }}
 			</div>

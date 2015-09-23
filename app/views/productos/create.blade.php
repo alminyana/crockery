@@ -3,6 +3,18 @@
 @section('content')
 	{{HTML::script('js/fileinput.js')}}
     {{HTML::style('css/fileinput.css')}}
+<style>
+.file-preview-frame {
+    display: table;
+    margin: 8px;
+    height: 160px;
+    border: 0px solid #ddd;
+    box-shadow: 1px 1px 5px 0px #a2958a;
+    padding: 6px;
+    float: left;
+    text-align: center;
+}
+</style>
 <div id="identificador" class="createobjbody"></div>
 
 	<div class="container">
@@ -25,7 +37,7 @@
 
 			<div class="form-group">
 				{{Form::label('id_categ','Categoria')}}<br/>
-				{{Form::select('id_categ',$categorias,'id',['class'=>'form-control input-lg','id'=>'selectsubcategorias'])}}
+				{{Form::select('id_categ',$categorias,'id',['class'=>'form-control','id'=>'selectsubcategorias'])}}
 				
 			</div>
 			<div class="form-group">
@@ -46,7 +58,7 @@
             </div>
 
 			    <div class="form-group">
-			    	{{ Form::submit('Insertar Producto',array('class'=>'btn btn-lg btn-success btn-block','id'=>'idlogin'))}}
+			    	{{-- Form::submit('Insertar Producto',array('class'=>'btn btn-lg btn-success btn-block','id'=>'idlogin')) --}}
 			    </div>
 			{{ Form::close() }}
 			</div>
@@ -55,7 +67,7 @@
 	<script>
 		$("#file-3").fileinput({
 			showCaption: true,
-			showUpload: false,
+			showUpload: true,
 			showRemove: true,
 			browseLabel: 'Seleccionar',
 			removeLabel: 'Eliminar',
