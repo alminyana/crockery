@@ -88,23 +88,11 @@
 
         </div>
     </div>
-<style type="text/css">
-    body {
-        padding-bottom: 6em;
-    }
-    .datos th {
-        padding: .4em;
-        color: #fff;
-        background-color: #ccc;
-    }
-    #cat, #sub, #num {font-size: 23px;padding: 1em;}
-    table {padding-bottom: 3em;}
-    input[type='checkbox'] {
-        width: 15px;
-        height: 15px;
-        margin: 2em;
-    }
-</style>
+    <style>
+        .listado {
+            width: 100px;
+        }
+    </style>
     <div class="container tablaprods">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <div class="table-responsive finalpagina">
@@ -124,20 +112,7 @@
             </table>
         </div>
         </div>
-<style type="text/css">
-    #btn-grupo1  {
-        margin: 2em 0 1em 0;
-    }
-    #btn-grupo2 {
-     margin: 2em 0 2em 0;   
-    }
-    .todos {
-        margin: 1em;
-    }
-    .listado {
-        width: 100px;
-    }
-</style>
+
         <div class="blanco"></div>
             {{-- Form::open(array('url'=>'productos/borrar', 'class' => 'form-login','role'=>'form','id'=>'toto2')) --}}
             

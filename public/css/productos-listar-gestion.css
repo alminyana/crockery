@@ -1,4 +1,41 @@
 /*PAGINA GESTION ADMIN LISTAR PRODUCTOS*/
+
+body {
+    padding-bottom: 6em;
+}
+.datos th {
+    padding: .4em;
+    color: #fff;
+    background-color: #ccc;
+}
+#cat, #sub, #num {font-size: 23px;padding: 1em;}
+table {padding-bottom: 3em;}
+input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+    margin: 2em;
+}
+
+
+
+#btn-grupo1  {
+    margin: 2em 0 1em 0;
+}
+#btn-grupo2 {
+ margin: 2em 0 2em 0;   
+}
+.todos {
+    margin: 1em;
+}
+.listado {
+    width: 100px;
+}
+
+
+
+
+
+
 .subsub {
     display:none;
 }
