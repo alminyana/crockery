@@ -142,6 +142,7 @@ class ProductosController extends \BaseController {
 	 */
 	public function store()
 	{
+		//dd(Input::all());
 		//dd(count(Input::file('imatge')));
 		if(Input::hasFile('imatge')) {
 			$fotos = Input::file('imatge');
@@ -156,11 +157,19 @@ class ProductosController extends \BaseController {
 					//$ffoto = Image::make(Input::file('imatge')->getRealPath())->resize(1000, null, true, false);
 					$ffoto = Image::make($f->getRealPath());
 					
-					$ffoto->resize(800, null, function ($constraint) {
+					$ffoto->resize(400, null, function ($constraint) {
 					    $constraint->aspectRatio();
 					});
 					
 					$producto->imatge = $ffoto;
+					
+					//copiar imagen a ruta public/img/upload
+
+					/*$nombre =  "foto.jpg";
+					$destination = public_path() . '/img/upload/' . $producto->id_categ . '/' . $producto->id_subcateg . '/';
+					$producto->rutaimg = $destination . $nombre;
+					$ffoto->move($destination, $nombre);
+*/
 					$producto->save();
 				}
 
