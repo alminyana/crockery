@@ -144,6 +144,10 @@ class ProductosController extends \BaseController {
 	{
 		//dd(Input::all());
 		//dd(count(Input::file('imatge')));
+		if (!Input::has('id_categ') || !Input::has('id_subcateg')) {
+			return Redirect::to('productos/create')->with('message', '<i class="glyphicon glyphicon-warning-sign izq"></i><span class="text-primary">Porfavor, asegúrate de que has seleccionado una Categoría y Subcategoría.</span>')
+											->withInput(Input::all());
+		}
 		if(Input::hasFile('imatge')) {
 			$fotos = Input::file('imatge');
 			$validator = Validator::make($fotos, Producto::$reglas);
@@ -152,24 +156,39 @@ class ProductosController extends \BaseController {
 
 					$producto = new Producto();
 					$producto->id_categ = Input::get('id_categ');
+					Session::put('last_cat_used', Input::get('id_categ'));
 					$producto->id_subcateg = Input::get('id_subcateg');
 					//$ffoto = Image::make(Input::file('imatge')->getRealPath())->resize(570, null);
 					//$ffoto = Image::make(Input::file('imatge')->getRealPath())->resize(1000, null, true, false);
 					$ffoto = Image::make($f->getRealPath());
 					
-					$ffoto->resize(400, null, function ($constraint) {
+					$ffoto->resize(500, null, function ($constraint) {
 					    $constraint->aspectRatio();
 					});
 					
 					$producto->imatge = $ffoto;
-					
-					//copiar imagen a ruta public/img/upload
 
-					/*$nombre =  "foto.jpg";
-					$destination = public_path() . '/img/upload/' . $producto->id_categ . '/' . $producto->id_subcateg . '/';
-					$producto->rutaimg = $destination . $nombre;
-					$ffoto->move($destination, $nombre);
-*/
+					
+					//$filename = $f->getClientOriginalName();
+					//$producto->rutaimg = 'public/img/upload/' . $filename;
+
+					//print_r($producto);
+
+					//copiar imagen a ruta public/img/upload
+					/*$filename = $f->getClientOriginalName();
+					$extension = $f->getClientOriginalExtension();
+
+					//$destination = public_path() . '/img/upload/' . $producto->id_categ . '/' . $producto->id_subcateg . '/';
+					$destination_relative_path = 'public/img/upload/' . $producto->id_categ . '/' . $producto->id_subcateg . '/';
+
+					$vamos = Image::make($ffoto);
+
+					$vamos->save('public/img/upload/' . $filename, 60);*/
+
+					//$file = $vamos->move($destination, $nombre);
+					
+
+
 					$producto->save();
 				}
 

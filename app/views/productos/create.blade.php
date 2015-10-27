@@ -3,18 +3,7 @@
 @section('content')
 	{{HTML::script('js/fileinput.js')}}
     {{HTML::style('css/fileinput.css')}}
-<style>
-.file-preview-frame {
-    display: table;
-    margin: 8px;
-    height: 160px;
-    border: 0px solid #ddd;
-    box-shadow: 1px 1px 5px 0px #a2958a;
-    padding: 6px;
-    float: left;
-    text-align: center;
-}
-</style>
+
 <div id="identificador" class="createobjbody"></div>
 
 	<div class="container">
@@ -37,7 +26,10 @@
 
 			<div class="form-group">
 				{{Form::label('id_categ','Categoria')}}<br/>
-				{{Form::select('id_categ',$categorias,'id',['class'=>'form-control','id'=>'selectsubcategorias'])}}
+				<?php
+					$default = Session::has('last_cat_used') ? Session::get('last_cat_used') : null;
+				?>
+				{{Form::select('id_categ',$categorias, $default, ['class'=>'form-control','id'=>'selectsubcategorias'])}}
 				
 			</div>
 			<div class="form-group">
