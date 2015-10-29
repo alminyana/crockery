@@ -28,6 +28,7 @@ class SubcategoriasController extends \BaseController {
 	public function create()
 	{
 		$cats = Categorium::all()->lists('nom','id');
+		asort($cats);
 		$categorias = Categorium::orderBy('nom','asc')->get();
 		$subcategorias = Subcategorium::orderBy('nom','asc')->get();
 		foreach($subcategorias as $sub) {
