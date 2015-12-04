@@ -1,9 +1,24 @@
 @extends('layout.main')
 @section('content')
+<script>
+    /*$(document).ready(function(){
+       $(".lightgallery").lightGallery();
+    });*/
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/lg-fb-comment-box.min.css">
+<link rel="stylesheet" type="text/css" href="css/lg-transitions.min.css">
+<link rel="stylesheet" type="text/css" href="css/lightgallery.min.css">
+{{--    Blue-imp gallery styles    --}}
+
 <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-image-gallery.min.css">
-	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+
 <div id="identificador" class="indexobjbody"></div>
+{{-- Galeria blueimp-gallery bootstrap --}}
+
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
     <div class="slides"></div>
@@ -37,7 +52,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
 	<div class="container">
         <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
         	<h2><strong>Lista Productos</strong></h2>
@@ -73,18 +88,21 @@
 			<button class="btn btn-danger btn-primary btn-block" type="button" id="mostrarobjetos"><i class="fa fa-file-image-o"> </i> {{Lang::get('textos.indexboton')}}</button>
 			</div>
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg mas"></div>
-			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 espaitop">
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 espaitop lightgallery">
 				<div class="negro">
 					<h3 class="text-right upper"><strong>Galería de imágenes</strong></h3>
 				</div>
 				<div class="espacio"></div>
-	<div id="contenidoajax"></div>
+	           <div id="contenidoajax"></div>
 			</div>
 		</div>
 
 	</div>
 
-	
+    {{--<script src="js/lightgallery-all.min.js" type="text/javascript"></script> --}}
+    
+        
+    <!-- Blue imp gallery js files -->
     <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 	<script src="js/bootstrap-image-gallery.min.js"></script>
     

@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+    /*new Gallery*/
+    
+
+
+
+
     /* Método para obtener el id del formulario actual,
         una vez comfirmado en el modal, ejecutamos submit
         utilizado en Modulo Usuaris, Modulo Bars, Modulo Rutas 
@@ -156,21 +163,28 @@ $(document).ready(function(){
                         var titolgaleria = titolo2;
                         console.log(titolo);
                         for (data in respuesta.obs) {
-                            /* version2 */
+                            /* version 1 */                            
                             content+="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='thumbnail'>";
-                                content+="<a href='productos/"+respuesta.obs[data].id+"/imatge' title='"+titolo+" | "+titolgaleria+"' data-gallery>";
-                                content += "<img class='img img-responsive img-rounded anchito' src='productos/"+respuesta.obs[data].id+"/imatge'/>";
-                                content+="</a>";
-                                if (titolo2 == 'TODO' || titolo2 == 'todo' || titolo2 == 'Todo') {
-                                    titolo2 = "<i class='glyphicon glyphicon-asterisk'></i>";
-                                }
-                                content+="<h4 class='centrado'><span class='text-success'>"+titoloPartido+"</span></h4>";
-                                content+="<h4 class='centrado'>"+titolo2+"</h4>";
-                                var nombre_foto = titolo.toLowerCase();
-                                var nombre_foto2 = titolgaleria.toLowerCase();
-                                //content+="<hr/>";
-                                content += "<p><a href='productos/"+respuesta.obs[data].id+"/imatge' class='btn btn-success center-block' id='down' download='"+nombre_foto+"_"+nombre_foto2+"_"+respuesta.obs[data].id+".jpg'><i class='glyphicon glyphicon-cloud-download'></i> Descargar</a></p>";
-                                content+="</div></div>";
+                            content+="<a href='productos/"+respuesta.obs[data].id+"/imatge' title='"+titolo+" | "+titolgaleria+"' data-gallery>";
+                            content += "<img class='img img-responsive img-rounded anchito' src='productos/"+respuesta.obs[data].id+"/imatge'/>";
+                            content+="</a>";
+                            if (titolo2 == 'TODO' || titolo2 == 'todo' || titolo2 == 'Todo') {
+                                titolo2 = "<i class='glyphicon glyphicon-asterisk'></i>";
+                            }
+                            //content+="<h4 class='centrado'><span class='text-success'>"+titoloPartido+"</span></h4>";
+                            //content+="<h4 class='centrado'>"+titolo2+"</h4>";
+                            // var nombre_foto = titolo.toLowerCase();
+                            // var nombre_foto2 = titolgaleria.toLowerCase();
+                            //content+="<hr/>";
+                            content += "<p><a href='productos/"+respuesta.obs[data].id+"/imatge' class='btn btn-success center-block' id='down' download='"+nombre_foto+"_"+nombre_foto2+"_"+respuesta.obs[data].id+".jpg'><i class='glyphicon glyphicon-cloud-download'></i> Descargar</a></p>";
+                            content+="</div></div>";
+
+                            /* version2 
+                            content+="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='thumbnail'>";
+                            content += "<a href='productos/"+respuesta.obs[data].id+"/imatge'>";
+                            content += "<img src='productos/"+respuesta.obs[data].id+"/imatge' />";
+                            content += "</a>";
+                            content += "</div></div>";*/
                         }
                         content+='</div>';
                     }
