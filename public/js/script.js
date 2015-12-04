@@ -173,8 +173,8 @@ $(document).ready(function(){
                             }
                             //content+="<h4 class='centrado'><span class='text-success'>"+titoloPartido+"</span></h4>";
                             //content+="<h4 class='centrado'>"+titolo2+"</h4>";
-                            // var nombre_foto = titolo.toLowerCase();
-                            // var nombre_foto2 = titolgaleria.toLowerCase();
+                            var nombre_foto = titolo.toLowerCase();
+                            var nombre_foto2 = titolgaleria.toLowerCase();
                             //content+="<hr/>";
                             content += "<p><a href='productos/"+respuesta.obs[data].id+"/imatge' class='btn btn-success center-block' id='down' download='"+nombre_foto+"_"+nombre_foto2+"_"+respuesta.obs[data].id+".jpg'><i class='glyphicon glyphicon-cloud-download'></i> Descargar</a></p>";
                             content+="</div></div>";
