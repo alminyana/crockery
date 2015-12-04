@@ -145,7 +145,7 @@ class ProductosController extends \BaseController {
 		//dd(Input::all());
 		//dd(count(Input::file('imatge')));
 		if (!Input::has('id_categ') || !Input::has('id_subcateg')) {
-			return Redirect::to('productos/create')->with('message', '<i class="glyphicon glyphicon-warning-sign izq"></i><span class="text-primary">Porfavor, asegúrate de que has seleccionado una Categoría y Subcategoría.</span>')
+			return Redirect::to('productos/create')->with('message', '<i class="glyphicon glyphicon-warning-sign izq"></i><span class="text-primary">Falta seleccionar una Categoría o Subcategoría.</span>')
 											->withInput(Input::all());
 		}
 		if(Input::hasFile('imatge')) {
@@ -158,6 +158,7 @@ class ProductosController extends \BaseController {
 					$producto->id_categ = Input::get('id_categ');
 					Session::put('last_cat_used', Input::get('id_categ'));
 					$producto->id_subcateg = Input::get('id_subcateg');
+					Session::put('las_subcateg_used', Input::get('id_subcateg'));
 					//$ffoto = Image::make(Input::file('imatge')->getRealPath())->resize(570, null);
 					//$ffoto = Image::make(Input::file('imatge')->getRealPath())->resize(1000, null, true, false);
 					$ffoto = Image::make($f->getRealPath());

@@ -34,6 +34,19 @@
 			</div>
 			<div class="form-group">
 				{{Form::label('id_subcateg','Subcategoria')}}<br/>
+				
+				{{-- 
+					TODO --> pintar input select subcategs en html y pasar solo value por ajax
+					<
+
+					?php
+						$last_subcateg = Session::has('last_subcateg_used') ? Session::get('last_subcateg_used') : null;
+					?>
+					{{Form::select('id_subcateg',//subcategs ajax//, $last_subcateg, ['class'=>'form-control','id'=>'selectsubcategorias'])}}		
+				
+				--}}
+
+
 				<div id="subcateg"></div>
 				<div id="wait">{{--HTML::image('img/gif-load.gif','waiting...',array('id'=>'fotowait'))--}}
 					<i class="fa fa-refresh fa-spin fa-2x"></i>
