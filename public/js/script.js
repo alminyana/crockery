@@ -62,6 +62,42 @@ $(document).ready(function(){
         $('body').on('change','#id_subcateg',obtenerProductosAjax);
         $('body').on('ready','#id_subcateg',obtenerProductosAjax);
         
+        ///funcion para captura el evento de boton de subcategoria clicado para
+            //añadir clase de boton clicado
+
+
+
+        $('body').on('click', '.xxxx', function (){
+            
+            $dato= this.attributes.iden.nodeValue;
+
+            $('.xxxx').removeClass('active');
+            $(this).addClass('active');
+
+
+            obtenerProductosAjaxBotonera($dato);
+        });
+
+        /**
+            Añadir botones de subcategorias en lugar de selectbox
+        */
+
+        function pintarBotonesSubcategs(respuesta) {
+                var botones="<div id='botonera'>";
+                for (dato in respuesta.subs) {
+                    console.log(respuesta.subs);
+                    if (respuesta.subs[dato].nom === "TODO") {
+                        var ultimo = "<btn href='' iden='" + respuesta.subs[dato].id + "' class='btn btn-block btn-default xxxx'>"+ respuesta.subs[dato].nom +"</btn>";
+                    } else {
+                        botones+= "<btn href='' iden='" + respuesta.subs[dato].id + "' class='btn btn-block btn-default xxxx'>"+ respuesta.subs[dato].nom +"</btn>";                        
+                    }
+                    
+                }
+                botones += ultimo;
+                botones+="</div>";
+            return botones;
+        }
+
 
         //Obtener todos las subcategorias de una categoria concreta --INDEX PRODUCTOS---
          function obtenerSubcategoriasIndex()
@@ -79,7 +115,9 @@ $(document).ready(function(){
                         //$('#subcateg').html('hola');
                     },
                     success: function (respuesta) {
+                        var newButtons = pintarBotonesSubcategs(respuesta);
                         $('#waiting').hide();
+                        
                         var mostra = ''; 
                         if (respuesta) {
                             mostra += "<select class='form-control input-default' name='id_subcateg' id='id_subcateg'>";
@@ -88,7 +126,8 @@ $(document).ready(function(){
                             }
                             mostra += "</select>";
                         }
-                        $('#subcategorias').html(mostra);
+                        /*$('#subcategorias').html(mostra);*/
+                        $('#subcategorias').html(newButtons+"<hr/>");
                     }
             });
         } //final obtenerSubcategorias()
@@ -192,5 +231,58 @@ $(document).ready(function(){
                 }
             }); //final metodo ajax
         } //final funcion
+
+
+
+
+
+
+
+        ///obtener productos ajax al pulsar boton de subcategoria
+        function obtenerProductosAjaxBotonera(valor)
+        {
+             //e.preventDefault();
+            //$valor = $(this).val();
+            $valor = valor;
+
+            $.ajax({
+                type: 'GET',
+                url: 'showproductoajax',
+                contentType: "image/png",
+                data: {subcategoria: $valor},
+                dataType: 'json',
+                beforeSend: function(){
+
+                    var logoAjax = '<img src="/img/gif-load.gif" style="padding-top: 5em;" class="center-block"/>'
+                    $('#contenidoajax').html(logoAjax);
+                },
+                success: function (respuesta) {
+                    var content="";
+                    if(respuesta){
+                        content+="<div id='links'>";
+                        for (data in respuesta.obs) {
+                            /* version 1 */                            
+                            content+="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='thumbnail'>";
+                            content+="<a href='productos/"+respuesta.obs[data].id+"/imatge' data-gallery>";
+                            content += "<img class='img img-responsive img-rounded anchito' src='productos/"+respuesta.obs[data].id+"/imatge'/>";
+                            content+="</a>";
+                            
+                            content += "<p><a href='productos/"+respuesta.obs[data].id+"/imatge' class='btn btn-success btn-xs center' id='down' download='"+respuesta.obs[data].id+".jpg'><i class='glyphicon glyphicon-cloud-download'></i></a></p>";
+                            content+="</div></div>";
+                        }
+                        content+='</div>';
+                    }
+                    $('#contenidoajax').html(content);
+                }
+            }); //final metodo ajax
+        } //final funcion
+
+
+
+
+
+
+
+
 
 });

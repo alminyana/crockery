@@ -4,7 +4,6 @@
     /*$(document).ready(function(){
        $(".lightgallery").lightGallery();
     });*/
-
 </script>
 
 <link rel="stylesheet" type="text/css" href="css/lg-fb-comment-box.min.css">
@@ -84,8 +83,8 @@
 					<i class="fa fa-refresh fa-spin fa-2x"></i>
 				</div>
 			</div>
-			<br/>
-			<button class="btn btn-danger btn-primary btn-block" type="button" id="mostrarobjetos"><i class="fa fa-file-image-o"> </i> {{Lang::get('textos.indexboton')}}</button>
+			{{-- <br/>
+			<button class="btn btn-danger btn-primary btn-block" type="button" id="mostrarobjetos"><i class="fa fa-file-image-o"> </i> {{Lang::get('textos.indexboton')}}</button> --}}
 			</div>
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg mas"></div>
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 espaitop lightgallery">

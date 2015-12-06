@@ -10,6 +10,8 @@ body {
 .finalpagina {
 	margin-bottom: 4em;
 }
+
+
 /*GENERAL FORMULARIOS ESPCIOS ENTRE FORM-GROUP LABELS */
 
 .form-group {
@@ -66,7 +68,6 @@ body {
 	.centrado {
 		text-align: center;
 	}
-	#down {margin: 0 1em 0 1em;}
 
 
 .fondopanel {
@@ -288,7 +289,10 @@ p.horario {
 }
 
 #down {
-	margin-top: 2em;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-top: .8em;
+	margin-left: .5em;
 	background-color: #222;
 	border-color: #111;
 
@@ -332,6 +336,10 @@ span.label {
 #tablacateg {
 	padding: 1em;
 
+}
+
+.thumbnail {
+	padding: 2px;
 }
 
 /*INDEX CATEGORIA*/
@@ -395,6 +403,9 @@ img#fotowait {
 }
 
 .anchito {width: 100%;}
+.anchito:hover {
+	opacity: .8;
+}
 #wait i, #waiting i {margin-left: 1em;}
 
 
