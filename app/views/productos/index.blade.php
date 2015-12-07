@@ -1,16 +1,7 @@
 @extends('layout.main')
 @section('content')
-<script>
-    /*$(document).ready(function(){
-       $(".lightgallery").lightGallery();
-    });*/
-</script>
 
-<link rel="stylesheet" type="text/css" href="css/lg-fb-comment-box.min.css">
-<link rel="stylesheet" type="text/css" href="css/lg-transitions.min.css">
-<link rel="stylesheet" type="text/css" href="css/lightgallery.min.css">
 {{--    Blue-imp gallery styles    --}}
-
 <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-image-gallery.min.css">
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
@@ -105,8 +96,6 @@
 		</div>
 
 	</div>
-
-    {{--<script src="js/lightgallery-all.min.js" type="text/javascript"></script> --}}
     
         
     <!-- Blue imp gallery js files -->

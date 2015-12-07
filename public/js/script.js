@@ -90,7 +90,6 @@ $(document).ready(function(){
                 var botones="<div id='botonera'>";
                 var ultimo;
                 for (dato in respuesta.subs) {
-                    console.log(respuesta.subs);
                     /*if (respuesta.subs[dato].nom === "TODO") {
                         ultimo = "<btn href='' iden='" + respuesta.subs[dato].id + "' class='btn btn-block btn-default xxxx'>"+ respuesta.subs[dato].nom +"</btn>";
                     } else {
@@ -109,7 +108,6 @@ $(document).ready(function(){
          function obtenerSubcategoriasIndex()
             {
                 var dato = $('#indexcategorias').val();
-                console.log(dato);
                 $.ajax({
                     type: 'GET',
                     url: 'productos/content_ajax',
@@ -142,7 +140,6 @@ $(document).ready(function(){
             function obtenerSubcategorias()
             {
                 var dato = $('#selectsubcategorias').val();
-                console.log(dato);
                 $.ajax({
                     type: 'GET',
                     url: 'content_ajax',
@@ -195,7 +192,6 @@ $(document).ready(function(){
                 success: function (respuesta) {
                     var content="";
                     if(respuesta){
-                        console.log('hay algo');
                         content+="<div id='links'>";
                         var titolo = $("select option:selected").html();
                         var titoloPartido;
@@ -206,7 +202,6 @@ $(document).ready(function(){
                         }
                         var titolo2 = $("#id_subcateg option:selected").html();
                         var titolgaleria = titolo2;
-                        console.log(titolo);
                         for (data in respuesta.obs) {
                             /* version 1 */                            
                             content+="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='thumbnail'>";
