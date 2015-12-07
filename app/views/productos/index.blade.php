@@ -54,7 +54,7 @@
 </div> 
 	<div class="container">
         <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
-        	<h2><strong>Lista Productos</strong></h2>
+        	<h2><strong>Productos Crockery</strong></h2>
 
         </div>
         {{--<div class="pull-right">
@@ -62,12 +62,20 @@
         </div>--}}
     </div>
 <style>
+    .ourgif {
+            margin-left: 4em;
 
+    }
 </style>
 	<div class="container">
-		<div class="center-block">
-			<img id="bordebolita" class="img img-responsive img-circle center-block" src="img/animasionOK.gif" width="160px">
+		<div class="center-block hidden-xs">
+			<img id="bordebolita" class="img img-responsive img-circle center-block ourgif pull-left" src="img/animasionOK.gif" width="160px">
+            <img id="bordebolita2" class="img img-responsive img-circle center-block ourgif pull-left" src="img/animasionOKcincoA.gif" width="160px">
+            <img id="bordebolita2" class="img img-responsive img-circle center-block ourgif pull-left" src="img/animasionOKcincoB.gif" width="160px">
+            <img id="bordebolita2" class="img img-responsive img-circle center-block ourgif pull-left hidden-xs hidden-sm" src="img/animasionOKcincoC.gif" width="160px">
+            <img id="bordebolita2" class="img img-responsive img-circle center-block ourgif pull-left hidden-xs hidden-sm hidden-md" src="img/animasionOKcincoD.gif" width="160px">
 		</div>
+        <div class="clearfix"></div>
 		<div class="row" id="ancorrow">
 			<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-lg-3 fondopanel">
 				<div class="form-group">
@@ -89,7 +97,7 @@
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg mas"></div>
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 espaitop lightgallery">
 				<div class="negro">
-					<h3 class="text-right upper"><strong>Galería de imágenes</strong></h3>
+					<h3 id="titulogaleria" class="text-right upper"><strong>Galería de imágenes</strong></h3>
 				</div>
 				<div class="espacio"></div>
 	           <div id="contenidoajax"></div>

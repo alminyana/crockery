@@ -73,7 +73,11 @@ $(document).ready(function(){
 
             $('.xxxx').removeClass('active');
             $(this).addClass('active');
+            var valor1 = $('#indexcategorias').find(":selected").text();
+            var valor2 = $(this).html();
 
+            var output = "<h3 class='text'><small>CATEG</small>&nbsp;" + valor1 + "&nbsp;&nbsp;|&nbsp;&nbsp;<small>SUBCATEG</small>&nbsp;" + valor2 + "</h3>";
+            var titulo = $('#titulogaleria').html(output);
 
             obtenerProductosAjaxBotonera($dato);
         });
@@ -84,16 +88,18 @@ $(document).ready(function(){
 
         function pintarBotonesSubcategs(respuesta) {
                 var botones="<div id='botonera'>";
+                var ultimo;
                 for (dato in respuesta.subs) {
                     console.log(respuesta.subs);
-                    if (respuesta.subs[dato].nom === "TODO") {
-                        var ultimo = "<btn href='' iden='" + respuesta.subs[dato].id + "' class='btn btn-block btn-default xxxx'>"+ respuesta.subs[dato].nom +"</btn>";
+                    /*if (respuesta.subs[dato].nom === "TODO") {
+                        ultimo = "<btn href='' iden='" + respuesta.subs[dato].id + "' class='btn btn-block btn-default xxxx'>"+ respuesta.subs[dato].nom +"</btn>";
                     } else {
                         botones+= "<btn href='' iden='" + respuesta.subs[dato].id + "' class='btn btn-block btn-default xxxx'>"+ respuesta.subs[dato].nom +"</btn>";                        
-                    }
-                    
+                    }*/
+                    botones+= "<btn href='#ancorrow' iden='" + respuesta.subs[dato].id + "' class='btn btn-block btn-default xxxx'>"+ respuesta.subs[dato].nom +"</btn>";                         
                 }
-                botones += ultimo;
+                // botones += ultimo;
+
                 botones+="</div>";
             return botones;
         }
