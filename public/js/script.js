@@ -76,7 +76,7 @@ $(document).ready(function(){
             var valor1 = $('#indexcategorias').find(":selected").text();
             var valor2 = $(this).html();
 
-            var output = "<h3 class='text'><strong><small>CATEG</small>&nbsp;" + valor1 + "&nbsp;&nbsp;|&nbsp;&nbsp;<small>SUBCAT</small>&nbsp;" + valor2 + "</strong></h3>";
+            var output = "<h3 class='text'><strong><small>CAT</small>&nbsp;" + valor1 + "&nbsp;&nbsp;|&nbsp;&nbsp;<small>SUB</small>&nbsp;" + valor2 + "</strong></h3>";
             var titulo = $('#titulogaleria').html(output);
 
             obtenerProductosAjaxBotonera($dato);
