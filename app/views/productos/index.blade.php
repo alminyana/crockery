@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap-image-gallery.min.css">
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 
+
 <div id="identificador" class="indexobjbody"></div>
 {{-- Galeria blueimp-gallery bootstrap --}}
 
@@ -72,7 +73,9 @@
 				<div class="form-group">
 				{{--Form::label('categoria','Categoría')--}}
 				<h5 class="mipanel"><span class="upper"><strong>{{Lang::get('textos.catecate')}}</strong></span></h5>
-				{{Form::select('categoria',$categorias,'id',['class'=>'form-control input-default','id'=>'indexcategorias'])}}
+				{{Form::select('categoria',$categorias,'id',['class'=>'form-control input-default','size'=>16,'id'=>'indexcategorias'])}}
+
+
 			</div>
 			<div class="form-group">
 				{{--Form::label('id_subcateg','Subcategoria')--}}<br/>

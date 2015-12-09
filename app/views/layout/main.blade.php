@@ -28,10 +28,12 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
-  	{{HTML::style('css/crockery-styles.css')}}
+  	
+	{{HTML::style('css/crockery-styles.css')}}
   	{{HTML::style('css/font-awesome.min.css')}}
   	{{HTML::script('js/script.js')}}
-  	<style type="text/css">
+
+	 	<style type="text/css">
   		.backtotop {
 			position: fixed;
 			bottom:2em;
@@ -53,28 +55,6 @@
 		}
 		.banderaidioma {margin: .3em;margin-right: 1em;border: solid #ccc 1px;border-radius: 3px;}
   	</style>
-  	<script>
-  	/* CODIGO BACK TO TOP
-	$(document).ready(function(){
-				var offset = 230;
-				var duration = 500;
-				jQuery(window).scroll(function() {
-					if (jQuery(this).scrollTop() > offset) {
-						jQuery('.backtotop').fadeIn(duration);
-					} else {
-						jQuery('.backtotop').fadeOut(duration);
-					}
-					
-				});
-				
-				jQuery('.backtotop').click(function(event) {
-					event.preventDefault();
-					jQuery('html, body').animate({scrollTop: 0}, duration);
-					return false;
-				});
-	});
-	*/
-</script>
 </head> 
 <body>
 	<div id="wrap">
@@ -189,6 +169,7 @@
 
 	</footer>
 	--}}
+		
 
 </body>
 </html>

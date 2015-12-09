@@ -66,7 +66,11 @@ $(document).ready(function(){
             //añadir clase de boton clicado
 
 
-
+        /**
+            Al seleccionar un botón de subcategoria capturamos categ y subcateg de los elementos html
+            y pintamos dinamicamente el titulo de la galeria.
+            Llamamos a método ajax para obtener imágenes
+        */
         $('body').on('click', '.xxxx', function (){
             
             $dato= this.attributes.iden.nodeValue;
@@ -114,9 +118,9 @@ $(document).ready(function(){
                     data: {categoria: dato},
                     dataType: 'json',
                     beforeSend: function(){
-                        $('#subcategorias').empty();
-                        $('#waiting').show();
-                        //$('#subcateg').html('hola');
+                        // $('#subcategorias').empty();
+                        // $('#waiting').show();
+                       
                     },
                     success: function (respuesta) {
                         var newButtons = pintarBotonesSubcategs(respuesta);
@@ -148,7 +152,6 @@ $(document).ready(function(){
                     beforeSend: function(){
                         $('#subcateg').empty();
                         $('#wait').show();
-                        //$('#subcateg').html('hola');
                     },
                     success: function (respuesta) {
                         $('#wait').hide();
