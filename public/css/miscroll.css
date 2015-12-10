@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "arial";
+  /*font-family: "arial";
   src: url("arial-black.eot?") format("eot"),
   url("arial-black.woff") format("woff"),
-  url("arial-black.ttf") format("truetype");
+  url("arial-black.ttf") format("truetype");*/
 }
 body {
 	font-family: "arial";
