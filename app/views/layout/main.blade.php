@@ -32,6 +32,12 @@
 	{{HTML::style('css/crockery-styles.css')}}
   	{{HTML::style('css/font-awesome.min.css')}}
   	{{HTML::script('js/script.js')}}
+  	{{HTML::script('js/scriptNewMenu.js')}}
+
+  	<!-- menu listar productos -->
+
+
+
 
 	 	<style type="text/css">
   		.backtotop {
@@ -137,7 +143,7 @@
 		</header>
 			
 			<div class="container">
-				<div class="row">
+				<div class="">
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
 						@if(Session::has('message'))
 							<div id="alert" class="alert alert-success alert-dismissable">
@@ -170,6 +176,6 @@
 	</footer>
 	--}}
 		
-
+	
 </body>
 </html>

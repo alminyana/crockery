@@ -2,13 +2,13 @@ $(document).ready(function(){
 	$.vegas('slideshow', {
 	  delay:8000,  //tiempo que dura un background	
 	  transition: 'fade2', //fade por default
-	  shuffle: false,
-	  transitionDuration: 3000, //1000 default	
+	  shuffle: true,
+	  transitionDuration: 2500, //1000 default	
 	  backgrounds:[
-	    { src:'img/img-intro/base/IMG_4357.JPG', fade:2000 },  
+	    { src:'img/img-intro/base/IMG_5070.JPG', fade:2000 },  
 	    { src:'img/img-intro/base/IMG_2483.JPG', fade:2000 },
-	    { src:'img/img-intro/base/IMG_4684.JPG', fade:2000 },
-	    { src:'img/img-intro/base/IMG_5070.JPG', fade:2000 }
+	    { src:'img/img-intro/base/IMG_4684.jpg', fade:2000 },
+	    { src:'img/img-intro/base/IMG_4357.jpg', fade:2000 }
 	  ],
 	  //call back function. Se ejecuta después de cambiar de imagen
 	  // walk:function(step) {

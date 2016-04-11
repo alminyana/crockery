@@ -117,9 +117,12 @@ class ProductosController extends \BaseController {
 	 */
 	public function index()
 	{
-		//$categorias = Categorium::all()->lists('nom','id')->orderBy('nom','asc');
 		$categorias = Categorium::orderBy('nom','asc')->lists('nom','id');
-		return View::make('productos.index')->with('categorias',$categorias);
+		$catas = Categorium::all();
+		// return View::make('productos.index');
+		// dd($categorias);
+		return View::make('productos.index')->with(array('categorias'=>$categorias, 'catas'=>$catas))->with('message', 'alsdkfjlasdfjalsdkf');
+
 	}
 
 	/**

@@ -45,20 +45,14 @@
     </div>
 </div> 
 	<div class="container">
-        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
+        {{-- <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
         	<h2><strong>Productos Crockery</strong></h2>
 
-        </div>
+        </div> --}}
         {{--<div class="pull-right">
         	<img id="bordebolita" class="img img-responsive img-circle center-block" src="img/animasionOK.gif" width="160px">
         </div>--}}
     </div>
-<style>
-    .ourgif {
-            margin-left: 4em;
-
-    }
-</style>
 	<div class="container">
 		<div class="center-block hidden-xs">
 			<img id="bordebolita" class="img img-responsive img-circle center-block ourgif pull-left" src="img/animasionOK.gif" width="160px">
@@ -68,17 +62,52 @@
             <img id="bordebolita2" class="img img-responsive img-circle center-block ourgif pull-left hidden-xs hidden-sm hidden-md" src="img/animasionOKcincoD.gif" width="160px">
 		</div>
         <div class="clearfix"></div>
+<style>
+    .felpamenu{
+        display:block;
+    }
+    .felpamenu li {
+        display: inline-block;
+        padding: .3em;
+    }
+    .newTime {
+        font-size: 22px;
+    }
+    .horas {
+        font-size: 25px;
+        margin-left: .5em;
+    }
+</style>
+    
+    <div class="alert alert-danger">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <span class="newTime">Nuevo horario tienda:  <span class="horas"> <strong>09:00 - 17:00 h.</strong></span></span>
+    </div>
+
+        {{--<div id="campeon" class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="felpamenu">
+                     @foreach($catas as $cat) 
+                        <li>
+                            
+                            <button class='btn btn-primary' valor='{{$cat->id}}'>{{$cat->nom}}</button>
+                        </li>
+                    @endforeach 
+                </ul>
+            </div>
+        </div> --}}
+
 		<div class="row" id="ancorrow">
 			<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-lg-3 fondopanel">
 				<div class="form-group">
 				{{--Form::label('categoria','Categoría')--}}
 				<h5 class="mipanel"><span class="upper"><strong>{{Lang::get('textos.catecate')}}</strong></span></h5>
-				{{Form::select('categoria',$categorias,'id',['class'=>'form-control input-default','size'=>16,'id'=>'indexcategorias'])}}
+				{{Form::select('categoria',$categorias,'id',['class'=>'form-control input-default','size'=>7,'id'=>'indexcategorias'])}}
 
 
 			</div>
 			<div class="form-group">
-				{{--Form::label('id_subcateg','Subcategoria')--}}<br/>
+				{{--Form::label('id_subcateg','Subcategoria')--}}
 				<h5 class="mipanel"><span class="upper"><strong>{{Lang::get('textos.subsub')}}</strong></span></h5>
 				<div id="subcategorias"></div>
 				<div id="waiting">{{--HTML::image('img/gif-load.gif','waiting...',array('id'=>'fotowait'))--}}

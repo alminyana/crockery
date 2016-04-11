@@ -207,7 +207,7 @@ $(document).ready(function(){
                         var titolgaleria = titolo2;
                         for (data in respuesta.obs) {
                             /* version 1 */                            
-                            content+="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3'><div class='thumbnail'>";
+                            content+="<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 grid-filtro=''><div class='thumbnail'>";
                             content+="<a href='productos/"+respuesta.obs[data].id+"/imatge' title='"+titolo+" | "+titolgaleria+"' data-gallery>";
                             content += "<img class='img img-responsive img-rounded anchito' src='productos/"+respuesta.obs[data].id+"/imatge'/>";
                             content+="</a>";

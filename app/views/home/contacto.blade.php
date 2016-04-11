@@ -204,9 +204,10 @@ Barcelona Spain Calle Pallars 84-88
             <div class="row fondo">
           <div class="col-xs-12 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-5 col-lg-5">
           <h3 class="text-info">{{Lang::get('textos.horario')}}</h3>
-          <p class="horario"><span class="text-success upper"><strong>{{Lang::get('textos.julio')}}</strong></span><br/>
-            {{Lang::get('textos.manana')}} 10:00 14:00<br/>
-            {{Lang::get('textos.tarde')}} 16:00 19:00<br/>
+          <p class="horario">
+            
+            09:00 - 17:00 h<br/>
+            
           </p>
           <p class="horario"><span class="text-success upper"><strong>{{Lang::get('textos.agosto')}}</strong></span><br/>
             {{Lang::get('textos.reserva')}} <br/><i class="glyphicon glyphicon-phone izq"></i> 678 437 408

@@ -10,7 +10,13 @@ body {
 .finalpagina {
 	margin-bottom: 4em;
 }
-
+/* productos/index  */
+.ourgif {
+       margin-left: 4em;
+}
+#indexcategorias {
+    padding: .2em;
+}
 
 /*GENERAL FORMULARIOS ESPCIOS ENTRE FORM-GROUP LABELS */
 
