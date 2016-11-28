@@ -166,6 +166,9 @@ Barcelona Spain Calle Pallars 84-88
     .sangria {
       margin-left: 1.7em;
     }
+    .contacto {
+      margin-top: 2em;
+    }
     </style>
     <div class="container">
         <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 page-header">
@@ -182,50 +185,49 @@ Barcelona Spain Calle Pallars 84-88
         </div>
       </div>  
       <div class="jumbotron">
-        <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
           <div class="logo">{{HTML::image('img/logo.jpg','logo Crockery',array('width'=>'400','class'=>'img img-responsive center-block','width'=>350))}}</div>
           <br/>
+
+          
+
+
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
+
+        <div class="col-xs-12 col-sm-8 col-md-8">
+          
+          <h3 class="text-danger">{{Lang::get('textos.plano')}}</h3>
+          {{Html::image('img/planoPallars.PNG','plano cercano',['class'=>'img-responsive','id'=>'planomapa'])}}
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
           <div id="fondodirec" class="contacto">
           <address>
 
           <h3><span class="text text-danger">{{Lang::get('textos.direcc')}}</span></h3>
+          
+          </p>
           <i class="glyphicon glyphicon-map-marker izq"></i> {{-- Lang::get('textos.pasaje') --}} {{Lang::get('textos.calle')}} Pallars 84-88 2º 1a<br/><span style="margin-left: 2em">08018</span><br/>
-          <i class="glyphicon glyphicon-phone-alt izq"></i> (93) 5341768<br/>
-          <i class="glyphicon glyphicon-phone izq"></i> 678 437 407<br/>
-          <i class="glyphicon glyphicon-phone izq"></i> 678 437 408<br/>
-        </address></div>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-          <div class="container">
-            <div class="row fondo">
-          <div class="col-xs-12 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-5 col-lg-5">
-          <h3 class="text-info">{{Lang::get('textos.horario')}}</h3>
+          <i class="glyphicon glyphicon-phone-alt izq"></i> (93) 5341768<br/><br/>
+          <h4 class="text-info">{{Lang::get('textos.horario')}}</h4>
           <p class="horario">
             
             09:00 - 17:00 h<br/>
             
           </p>
           <p class="horario"><span class="text-success upper"><strong>{{Lang::get('textos.agosto')}}</strong></span><br/>
-            {{Lang::get('textos.reserva')}} <br/><i class="glyphicon glyphicon-phone izq"></i> 678 437 408
-          </p>
-          <br/>
-         {{--  <h2 class="text-info">{{Lang::get('textos.acces')}}</h2>  
-         <p class="horario">
-            {{Lang::get('textos.acces2')}}
-          </p>
-          --}}
+            {{Lang::get('textos.reserva')}} <br/>
+          <i class="glyphicon glyphicon-phone izq"></i> 678 437 408<br/>
+          <i class="glyphicon glyphicon-phone izq"></i> 678 437 407<br/>
+          <i class="glyphicon glyphicon-phone izq"></i> Aitor 678 411 421<br/>
+          <i class="glyphicon glyphicon-envelope izq"></i> guilleduran69@gmail.com<br/>
 
+        </address></div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
-       <h3 class="text-danger">{{Lang::get('textos.plano')}}</h3>
-          {{Html::image('img/planoPallars.PNG','plano cercano',['class'=>'img-responsive','id'=>'planomapa'])}}
-        </div>
-        </div>
-          </div>     
+      </div>
+      <div class="clearfix"></div>
+
+    
         
   </div>
 
