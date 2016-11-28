@@ -18,7 +18,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head ng-app="holaapp">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Crockery</title>
@@ -35,7 +35,8 @@
   	{{HTML::script('js/scriptNewMenu.js')}}
 
   	<!-- menu listar productos -->
-
+{{HTML::script('js/multi-column/jquery-gentleSelect-min.js')}}
+{{HTML::style('js/multi-column/jquery-gentleSelect.css')}}
 
 
 
