@@ -22,7 +22,7 @@ body {
 
 .form-group {
 		margin-top: 1em;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 }
 
 /* GENERAL CAJA ALTA / CAJA BAJA*/
@@ -69,16 +69,39 @@ body {
 		margin: 0;
 	}
 	.mas {
-		margin-top: 3em;
+		margin-top: 2em;
 	}
 	.centrado {
 		text-align: center;
 	}
 
 
+
+	/* customizado del select box de index productos */
+	#ancorrow {
+        min-height: 900px;
+    }
+    #indexcategorias {
+        padding: .5em;
+        background-color: #222;
+        
+    }
+    #indexcategorias option:hover {
+        cursor: pointer;
+        background-color: #444;
+    }
+    #indexcategorias option {
+        padding: .5em;
+        color: white;
+    }
+/* final customización index productos */
+
+
+
+
 .fondopanel {
 		padding: 1em;
-		background-color: #ddd;
+		background-color: #668c99;
 }
 .espacio {
 	width: 100%;
@@ -385,7 +408,7 @@ ul#lista-menu li:hover, ul#lista-menu li:focus {
 
 /* margen en los iconos de id izq*/
 i.izq {
-	margin-right: .5em;
+	margin: .5em;
 }
 
 div#wait {
@@ -491,4 +514,11 @@ input[type=select]:hover {
 }
 .dropdown-menu li a {
 	color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    #botonera-subcategs {
+        margin-left: 2.8em;
+		margin-right: 2.8em;
+    }
 }

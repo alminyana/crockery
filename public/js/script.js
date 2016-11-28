@@ -83,7 +83,9 @@ $(document).ready(function(){
             var output = "<h3 class='text'><strong><small>CAT</small>&nbsp;" + valor1 + "&nbsp;&nbsp;|&nbsp;&nbsp;<small>SUB</small>&nbsp;" + valor2 + "</strong></h3>";
             var titulo = $('#titulogaleria').html(output);
 
+
             obtenerProductosAjaxBotonera($dato);
+            $('#botonera-subcategs').hide(300);
         });
 
         /**
@@ -111,6 +113,7 @@ $(document).ready(function(){
         //Obtener todos las subcategorias de una categoria concreta --INDEX PRODUCTOS---
          function obtenerSubcategoriasIndex()
             {
+                $('#botonera-subcategs').show(300);
                 var dato = $('#indexcategorias').val();
                 $.ajax({
                     type: 'GET',
@@ -135,7 +138,8 @@ $(document).ready(function(){
                             mostra += "</select>";
                         }
                         /*$('#subcategorias').html(mostra);*/
-                        $('#subcategorias').html(newButtons+"<hr/>");
+                        $('#botonera-subcategs').show(300);
+                        $('#subcategorias').html(newButtons);
                     }
             });
         } //final obtenerSubcategorias()

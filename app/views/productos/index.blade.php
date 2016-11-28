@@ -63,13 +63,6 @@
 		</div>
         <div class="clearfix"></div>
 <style>
-    .felpamenu{
-        display:block;
-    }
-    .felpamenu li {
-        display: inline-block;
-        padding: .3em;
-    }
     .newTime {
         font-size: 22px;
     }
@@ -78,52 +71,49 @@
         margin-left: .5em;
     }
 </style>
-    
-    <div class="alert alert-danger">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <span class="newTime">Nuevo horario tienda:  <span class="horas"> <strong>09:00 - 17:00 h.</strong></span></span>
-    </div>
 
-        {{--<div id="campeon" class="container">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <ul class="felpamenu">
-                     @foreach($catas as $cat) 
-                        <li>
-                            
-                            <button class='btn btn-primary' valor='{{$cat->id}}'>{{$cat->nom}}</button>
-                        </li>
-                    @endforeach 
-                </ul>
-            </div>
-        </div> --}}
+        <!-- <div class="alert alert-info">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <span class="newTime">Nuevo horario tienda:  <span class="horas"> <strong>09:00 - 17:00 h.</strong></span></span>
+        </div> -->
+    
+
+
+
 
 		<div class="row" id="ancorrow">
 			<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-3 col-lg-3 fondopanel">
 				<div class="form-group">
-				{{--Form::label('categoria','Categoría')--}}
 				<h5 class="mipanel"><span class="upper"><strong>{{Lang::get('textos.catecate')}}</strong></span></h5>
-				{{Form::select('categoria',$categorias,'id',['class'=>'form-control input-default','size'=>7,'id'=>'indexcategorias'])}}
-
-
-			</div>
-			<div class="form-group">
-				{{--Form::label('id_subcateg','Subcategoria')--}}
-				<h5 class="mipanel"><span class="upper"><strong>{{Lang::get('textos.subsub')}}</strong></span></h5>
-				<div id="subcategorias"></div>
-				<div id="waiting">{{--HTML::image('img/gif-load.gif','waiting...',array('id'=>'fotowait'))--}}
-					<i class="fa fa-refresh fa-spin fa-2x"></i>
-				</div>
-			</div>
-			{{-- <br/>
-			<button class="btn btn-danger btn-primary btn-block" type="button" id="mostrarobjetos"><i class="fa fa-file-image-o"> </i> {{Lang::get('textos.indexboton')}}</button> --}}
+				{{Form::select('categoria',$categorias,'id',['class'=>'form-control input-default','size'=>9,'id'=>'indexcategorias'])}}
+			     </div>
 			</div>
 			<div class="col-xs-12 hidden-sm hidden-md hidden-lg mas"></div>
-			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 espaitop lightgallery">
-				<div class="negro">
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<!-- <div class="negro">
 					<h3 id="titulogaleria" class="text-right upper"><strong>Galería de imágenes</strong></h3>
-				</div>
+				</div> -->
+
+
+
+
+
+            <div class="fondopanel" id="botonera-subcategs">
+                <h5 class="mipanel"><span class="upper"><strong>{{Lang::get('textos.subsub')}}</strong></span></h5>
+                <div id="subcategorias"></div>
+                <!-- <div id="waiting">
+                    <i class="fa fa-refresh fa-spin fa-2x"></i>
+                </div> -->
+            </div>
+
+
+
+
+
+
 				<div class="espacio"></div>
 	           <div id="contenidoajax"></div>
+               <div id="contenidoajaxxx"></div>
 			</div>
 		</div>
 
@@ -133,6 +123,5 @@
     <!-- Blue imp gallery js files -->
     <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 	<script src="js/bootstrap-image-gallery.min.js"></script>
-    
 
 @stop
