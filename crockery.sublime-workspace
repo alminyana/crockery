@@ -1,0 +1,859 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"forin\tfor in own properties"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"$time",
+				"angular: $timeout"
+			],
+			[
+				"tralara",
+				"tralarala_youtube"
+			],
+			[
+				"strt",
+				"strtoupper"
+			],
+			[
+				"wp_",
+				"wp_head"
+			],
+			[
+				"text",
+				"textarea\t<textarea>"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ng",
+				"ng-selected\tAngularJS"
+			],
+			[
+				"ng-key",
+				"ng-keypress\tAngularJS"
+			],
+			[
+				"web-kit-t",
+				"-webkit-transition-duration"
+			],
+			[
+				"text-dec",
+				"text-decoration-style"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"webki",
+				"-webkit-transform-style"
+			],
+			[
+				"javasc",
+				"javascripts"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"$r",
+				"$rootScope\tAngularJS(DI)"
+			],
+			[
+				"ng-mo",
+				"ng-mouseover\tAngularJS"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"getCurren",
+				"getCurrentWeb"
+			],
+			[
+				"documentos",
+				"Documentos"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"obtener",
+				"obtenerTodas"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"$loca",
+				"$locationProvider\tAngularJS"
+			],
+			[
+				"$timeout",
+				"verbose_$timeout\tAngularJS"
+			],
+			[
+				"set",
+				"setTimeout(function, milliseconds);"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"fig",
+				"figcaption\t<figcaption>"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"string",
+				"string_plano"
+			],
+			[
+				"ng-v",
+				"ng-view\tAngularJS"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"mouse",
+				"mouseover\t.mouseover()"
+			],
+			[
+				"f",
+				"foreach\tblade-foreach"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"con",
+				"controller\tAngular.js"
+			],
+			[
+				"ngv",
+				"ng-view\tAngularJS"
+			],
+			[
+				"contr",
+				"angular: controller"
+			],
+			[
+				"config",
+				"config\tAngularJS"
+			],
+			[
+				"ngr",
+				"ng-repeat\tAngularJS"
+			],
+			[
+				"ng-c",
+				"ng-controller\tAngularJS"
+			],
+			[
+				"controller",
+				"angular: controller"
+			],
+			[
+				"c",
+				"config\tAngular.js"
+			],
+			[
+				"ng-cl",
+				"ng-click\tAngularJS"
+			],
+			[
+				"$routeP",
+				"$routeProvider\tAngularJS"
+			],
+			[
+				"co",
+				"controller\tAngular.js"
+			],
+			[
+				"$s",
+				"$scope\tAngularJS"
+			],
+			[
+				"cont",
+				"controller\tAngular.js"
+			],
+			[
+				"ng-re",
+				"ng-repeat\tAngularJS"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\nCSS3\n----\n\n  VERSION 2.1.0 CHANGES\n  \n  The highlighter now fully supports PostCSS-cssnext. This is a CSS preprocessor\n  that converts next-gen CSS into browser-supported CSS. It lets you write wacky\n  things like this:\n  \n      /* BEFORE NESTING */\n      table.colortable td {\n        text-align:center;\n      }\n      table.colortable td.c {\n        text-transform:uppercase;\n      }\n      table.colortable td:first-child, table.colortable td:first-child+td {\n        border:1px solid black;\n      }\n  \n      /* AFTER NESTING */\n      table.colortable {\n        & td {\n          text-align:center;\n          &.c {\n            text-transform:uppercase;\n          }\n          &:first-child, &:first-child + td {\n            border:1px solid black;\n          }\n        }\n      }\n  \n  Check out cssnext.io for the full list of features.\n  \n  To be clear, CSS3 *does not* install cssnext. It's just supported by the\n  highlighter if you want to use it.\n  \n  Thank you to ihodev and nirfse for helping me test this!\n",
+			"settings":
+			{
+				"buffer_size": 1062,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/User/JavaScript.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Nodejs/Nodejs.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JavaScript.sublime-build",
+					""
+				],
+				[
+					"Packages/User/node.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/JavaScript.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"uppercas",
+				"Snippet: |uppercase"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Package Control: List Packages"
+			],
+			[
+				"b",
+				"View: Toggle Side Bar"
+			],
+			[
+				"js",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/js",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/js/multi-column"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/.gitignore",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/productos/index.blade.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/js/script.js",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/css/crockery-styles.css",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/productos/indexxx.blade.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/productos/index.backup",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/productos/listar.blade.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/productos/borrargrupo.blade.php",
+		"/C/Users/Quique/Desktop/prova.js",
+		"/C/Users/Quique/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-build",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/css/font-awesome.min.css",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/css/bootstrap-image-gallery.min.css",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/layout/main.blade.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/js/multi-column/jquery-gentleSelect.css",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/home/index.blade.test.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/js/scriptNewMenu.js",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/js/select-multicolumn/Multi-Column-Select.css",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/js/app.js",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/home/index.blade.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/productos/show.blade.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/home/logo.blade.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/index.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/public/favicon.ico",
+		"/C/Users/Quique/Desktop/angu1-fount-js/src/app/components/TodoTextInput.js",
+		"/C/Users/Quique/Desktop/angu1-fount-js/src/app/components/Header.html",
+		"/C/Users/Quique/Desktop/angu1-fount-js/src/app/components/Header.js",
+		"/C/Users/Quique/Desktop/angu1-fount-js/src/app/components/Footer.js",
+		"/C/Users/Quique/Desktop/angular1-fount-typscript/src/routes.ts",
+		"/C/Users/Quique/Desktop/angular1-fount-typscript/src/app/techs/tech.ts",
+		"/C/Users/Quique/Desktop/angular1-fount-typscript/src/app/footer.ts",
+		"/C/Users/Quique/Desktop/angular1-fount-typscript/src/app/header.ts",
+		"/C/Users/Quique/Desktop/angular1-fount-typscript/src/index.ts",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/containers/App.html",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/todos/todos.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/containers/App.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/components/Footer.html",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/index.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/components/MainSection.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/routes.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/components/Header.html",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/components/Header.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/constants/TodoFilters.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/components/Footer.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/components/Footer.spec.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/app/constants/VisibilityFilters.js",
+		"/C/Users/Quique/Desktop/angular1-fountainjs/src/index.less",
+		"/C/Angular2/angular2-tour-of-heroes/app/app.component.ts",
+		"/C/Angular2/angular2-tour-of-heroes/styles.css",
+		"/C/Angular2/angular2-tour-of-heroes/app/main.ts",
+		"/C/Angular2/angular2-tour-of-heroes/index.html",
+		"/C/Angular2/angular2-tour-of-heroes/package.json",
+		"/C/Angular2/angular2-tour-of-heroes/systemjs.config.js",
+		"/C/Angular2/angular2-tour-of-heroes/tsconfig.json",
+		"/C/Angular2/angular2-tour-of-heroes/typings.json",
+		"/C/Angular2/angular2-seed/app/courses.component.ts",
+		"/C/Angular2/angular2-seed/app/courses.component.js",
+		"/C/Angular2/angular2-seed/app/app.component.js",
+		"/C/Angular2/cli-starter/vamonos/package.json",
+		"/C/Angular2/angular2-seed/app/app.component.ts",
+		"/C/Angular2/angular2-seed/app/courses.component.js.map",
+		"/C/Angular2/angular2-seed/index.html",
+		"/C/Angular2/angular2-seed/app/boot.js",
+		"/C/Angular2/angular2-seed/app/boot.ts",
+		"/C/Angular2/angular2-seed/package.json",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/home/contacto.blade.php",
+		"/C/Users/Quique/Desktop/angular-demo/js/callback.js",
+		"/C/Users/Quique/Desktop/angular-demo/index.html",
+		"/C/Users/Quique/Desktop/react_01/ejemplo-flux/actions/imageActions.js",
+		"/C/Users/Quique/Desktop/react_01/ejemplo-flux/estilos.css",
+		"/C/Users/Quique/Desktop/react_01/ejemplo-flux/index.html",
+		"/C/Users/Quique/Desktop/react_01/ejemplo-flux/package.json",
+		"/C/Users/Quique/Desktop/react_01/index.html",
+		"/C/Users/Quique/Desktop/ng-start/src/app/index.route.js",
+		"/C/Users/Quique/Desktop/javascript/ECMA6/02/js/human.js",
+		"/C/Users/Quique/Desktop/ng-start/src/app/index.constants.js",
+		"/C/Users/Quique/Desktop/ng-start/src/app/index.config.js",
+		"/C/Users/Quique/Desktop/javascript/ECMA6/02/index.html",
+		"/C/Users/Quique/Desktop/javascript/01_poo/js/encapsulacion.js",
+		"/C/Users/Quique/Desktop/javascript/ECMA6/01/index.html",
+		"/C/Users/Quique/Desktop/javascript/02_poo/js/herencia.js",
+		"/C/Users/Quique/Desktop/javascript/02_poo/js/Estudiante.js",
+		"/C/Users/Quique/Desktop/test-starter1/package.json",
+		"/C/Users/Quique/Desktop/test-starter1/bower.json",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/main/main.html",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/index.route.js",
+		"/C/Users/Quique/Desktop/test-starter1/src/index.html",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/components/navbar/navbar.directive.js",
+		"/C/Users/Quique/Desktop/test-starter1/gulpfile.js",
+		"/C/Users/Quique/Desktop/test-starter1/karma.conf.js",
+		"/C/Users/Quique/Desktop/test-starter1/gulp/watch.js",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/index.run.js",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/main/main.controller.spec.js",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/index.module.js",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/index.less",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/index.config.js",
+		"/C/Users/Quique/Desktop/test-starter1/src/app/index.constants.js",
+		"/C/Users/Quique/Desktop/javascript/02_poo/js/class.Coche.js",
+		"/C/Users/Quique/Desktop/javascript/02_poo/js/singleton.js",
+		"/C/Users/Quique/Desktop/javascript/agusti/codingDojoLaTiendaSL/index.js",
+		"/C/Users/Quique/Desktop/javascript/01_poo/js/prototype.js",
+		"/C/Users/Quique/Desktop/javascript/agusti/codingDojoLaTiendaSL/src/actualizarBotellaVinoTinto.js",
+		"/C/Users/Quique/Desktop/javascript/agusti/codingDojoLaTiendaSL/src/producto.js",
+		"/C/Users/Quique/Desktop/javascript/02_poo/index.html",
+		"/C/Users/Quique/Desktop/javascript/agusti/codingDojoLaTiendaSL/src/actualizarProducto.js",
+		"/C/Users/Quique/Desktop/javascript/01_poo/poo.html",
+		"/C/Users/Quique/Desktop/borrar.js",
+		"/C/Users/Quique/AppData/Roaming/Sublime Text 3/Packages/JavaScript.sublime-build",
+		"/C/Users/Quique/AppData/Roaming/Sublime Text 3/Packages/node.sublime-build",
+		"/C/Users/Quique/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+		"/C/Users/Quique/Desktop/borrar.html",
+		"/C/Users/Quique/Desktop/ECMA6/js/languaje.js",
+		"/C/Users/Quique/Desktop/ECMA6/index.html",
+		"/C/Users/Quique/Documents/Firma/firma-1.swf.html",
+		"/C/Users/Quique/Downloads/gezolan_catalogo/gezolan_catalogo/gezolan_catalogo_01.swf.html",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/controllers/ProductosController.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/controllers/CategoriasController.php",
+		"/C/xampp/htdocs/sitesLaravel/crockery_laravel/app/views/hello.php",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/components/aq-components/aq-input/templates/aq-input-number.mat.html",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/module/om/batch/components/fields.html",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/module/om/batch/add/layout.html",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/module/om/batch/add/validame.dir.js",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/components/aq-components/aq-validation/aq-validation.dir.js",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/components/aq-components/aq-fields/aq-fields.dir.js",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/module/om/batch/add/create-batch.ctr.js",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/module/om/batch/add/set-value.dir.js",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/module/om/batch/add/batch-add.router.js",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/module/om/connection.js",
+		"/C/Users/Quique/Desktop/abs/front_core_nodejs/src/app/module/server.cfg.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\sitesLaravel\\crockery_laravel\\app",
+			"C:\\xampp\\htdocs\\sitesLaravel\\crockery_laravel\\app\\views",
+			"C:\\Users\\Quique\\Desktop\\test-starter1",
+			"C:\\xampp\\htdocs\\sitesLaravel\\crockery_laravel",
+			"C:\\Users\\Quique\\Desktop\\abs\\front_core_nodejs",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"3",
+			"form",
+			"indexcategorias",
+			"lightgallery",
+			"light",
+			"subcategorias",
+			"hr",
+			"form-group",
+			".pepe",
+			"Large Dropdown Menu",
+			">   ",
+			"li izq",
+			"bindToController",
+			"this",
+			"freno",
+			"acelerar",
+			":",
+			"Atura",
+			"MiObjeto",
+			"animal",
+			"nombre",
+			"xxxx",
+			"fondopanel",
+			"waiting",
+			"selected",
+			"xxxx",
+			"val",
+			"h4",
+			"script.js",
+			"setValueOmbatch",
+			"des1b.absapp.net",
+			"background",
+			".ourgif",
+			".ourgi",
+			"\n      var startX = 0, startY = 0, x = 0, y = 0;\n\n      element.css({\n       position: 'relative',\n       border: '1px solid red',\n       backgroundColor: 'lightgrey',\n       cursor: 'pointer'\n      });\n\n      element.on('mousedown', function(event) {\n        // Prevent default dragging of selected content\n        event.preventDefault();\n        startX = event.pageX - x;\n        startY = event.pageY - y;\n        $document.on('mousemove', mousemove);\n        $document.on('mouseup', mouseup);\n      });\n\n      function mousemove(event) {\n        y = event.pageY - startY;\n        x = event.pageX - startX;\n        element.css({\n          top: y + 'px',\n          left:  x + 'px'\n        });\n      }\n\n      function mouseup() {\n        $document.off('mousemove', mousemove);\n        $document.off('mouseup', mouseup);\n      }\n    ",
+			"$scope",
+			"data",
+			"$scope",
+			"+m",
+			"alt+m",
+			"home",
+			"pep",
+			"getFullState",
+			"notification",
+			"true",
+			"<>",
+			"opacit",
+			"indexcategorias",
+			"console",
+			"content_ajax",
+			"            \n",
+			"down",
+			"thumbnail",
+			"id=\"down\"",
+			"class=\"down\"",
+			"down",
+			"pulsado",
+			"obtenerProductosAjax",
+			"last_cat_used",
+			"for",
+			"sort",
+			"add",
+			"random",
+			"->",
+			"paginator",
+			"Paginator",
+			"class",
+			".po",
+			"adminmenu",
+			"unbind",
+			"?>\n",
+			"sidebar-search",
+			"search",
+			"inicia la sesión",
+			"UserAdminLoginForm",
+			"family",
+			"fami",
+			"formacio",
+			"xperience",
+			"formaci",
+			"debug",
+			"Pastoral",
+			"pastoral",
+			"employees_pastorals",
+			"useTable",
+			"usde",
+			"debug",
+			"adminMenu",
+			"adminmenu",
+			"getInstance",
+			"__setCurrentAdminSite",
+			"AdminMenu",
+			";\n",
+			"astoral",
+			"_setCountriesList",
+			"pastorals",
+			"employees_pastorals",
+			"_schema",
+			"__setSelectorsOptions",
+			"beforeSave",
+			"className",
+			"astoral",
+			"asto",
+			"employees_pastorals",
+			"hasAndBelongsToMany",
+			"astoral",
+			"hasAndBelongsToMany",
+			"viewVars",
+			"getDataForLayout",
+			"Pastoral",
+			"pastoral",
+			"_setFlashSuccessSaving",
+			"pastoral",
+			"$content_for_layout",
+			"$content_for_layout=",
+			"$content_for_layout =",
+			"AdminMenu",
+			"AminMenu",
+			"menu_container",
+			"AdminMenu",
+			"AdminMenu::layout",
+			"AdminMenu",
+			"sidebar",
+			"php",
+			"sidebar-collapse",
+			"$content_for_layout",
+			"side-menu",
+			"pastoral"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"false"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1062,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1062,
+								1062
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"colorcode": true,
+							"default_dir": "C:\\xampp\\htdocs\\sitesLaravel\\crockery_laravel",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 242.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.nodejs":
+	{
+		"height": 91.0
+	},
+	"pinned_build_system": "Packages/Nodejs/Nodejs.sublime-build",
+	"project": "crockery.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"scripts",
+				"public\\js\\script.js"
+			],
+			[
+				"crockery",
+				"public\\css\\crockery-styles.css"
+			],
+			[
+				"script",
+				"public\\js\\scriptNewMenu.js"
+			],
+			[
+				"scriptnew",
+				"public\\js\\scriptNewMenu.js"
+			],
+			[
+				"aq-va",
+				"src\\app\\components\\aq-components\\aq-validation\\aq-validation.dir.js"
+			],
+			[
+				"rowte",
+				"materials\\node_modules\\angular-ui-grid\\less\\row-edit\\less\\rowEdit.less"
+			],
+			[
+				"inde",
+				"public\\index.html"
+			],
+			[
+				"todasctr",
+				"public\\javascripts\\controllers\\todasCtrl.js"
+			],
+			[
+				"newlist",
+				"public\\javascripts\\controllers\\newlistCtrl.js"
+			],
+			[
+				"app",
+				"public\\javascripts\\app.js"
+			],
+			[
+				"adminindex",
+				"app\\views\\actions\\admin_index.ctp"
+			],
+			[
+				"database",
+				"app\\config\\database.php"
+			],
+			[
+				"core",
+				"app\\config\\core.php"
+			],
+			[
+				"users",
+				"app\\controllers\\users_controller.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\wp-plugins.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
