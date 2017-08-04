@@ -177,6 +177,19 @@ Barcelona Spain Calle Pallars 84-88
         </div>
     </div>
 
+     <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+            
+            <div class="alert alert-info alert-dismissable fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Atención!</strong> Agosto abierto con cita previa, tanto para pedidos como para devoluciones. <strong>Gracias</strong><br>
+                <i class="glyphicon glyphicon-phone izq"></i> 678 437 407 - Guillermo&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;
+                <i class="glyphicon glyphicon-phone izq"></i> 678 411 421 - Aitor<br/>
+                
+            </div>
+        </div>
+    </div>
+
     <div class="container finalpagina">
       <div id="map_canvas"></div>
       <div class="row">
@@ -217,7 +230,6 @@ Barcelona Spain Calle Pallars 84-88
           </p>
           <p class="horario"><span class="text-success upper"><strong>{{Lang::get('textos.agosto')}}</strong></span><br/>
             {{Lang::get('textos.reserva')}} <br/>
-          <i class="glyphicon glyphicon-phone izq"></i> 678 437 408<br/>
           <i class="glyphicon glyphicon-phone izq"></i> 678 437 407<br/>
           <i class="glyphicon glyphicon-phone izq"></i> Aitor 678 411 421<br/>
           <i class="glyphicon glyphicon-envelope izq"></i> guilleduran69@gmail.com<br/>
